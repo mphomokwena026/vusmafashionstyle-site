@@ -1,7 +1,3 @@
-/* ================================
-   VUSMAFASHION STYLES — CLEAN CSS
-================================ */
-
 * {
   margin: 0;
   padding: 0;
@@ -30,16 +26,13 @@ img {
   display: block;
 }
 
-/* ================================
-   NAVBAR
-================================ */
+/* NAVBAR */
 
 .navbar {
   position: sticky;
   top: 0;
   z-index: 9999;
-  background: rgba(248, 244, 232, 0.97);
-  backdrop-filter: blur(14px);
+  background: #f8f4e8;
   border-bottom: 1px solid rgba(31, 36, 48, 0.12);
   padding: 16px 0;
 }
@@ -68,7 +61,6 @@ img {
   box-shadow: none !important;
 }
 
-/* Desktop navbar */
 @media (min-width: 1200px) {
   .navbar-expand-lg .navbar-toggler {
     display: none !important;
@@ -76,7 +68,6 @@ img {
 
   .navbar-expand-lg .navbar-collapse {
     display: flex !important;
-    flex-basis: auto;
   }
 
   .navbar-nav {
@@ -92,7 +83,6 @@ img {
     font-size: 12px;
     letter-spacing: 1.5px;
     white-space: nowrap;
-    padding: 8px 0;
   }
 
   .navbar-nav .nav-link:hover,
@@ -101,7 +91,6 @@ img {
   }
 }
 
-/* Laptop/tablet/mobile dropdown navbar */
 @media (max-width: 1199px) {
   .navbar-expand-lg .navbar-toggler {
     display: block !important;
@@ -118,45 +107,29 @@ img {
 
   .navbar-collapse {
     position: absolute;
-    top: calc(100% + 12px);
+    top: calc(100% + 10px);
     left: 12px;
     right: 12px;
-    width: auto;
     padding: 22px;
     border-radius: 24px;
-    background: rgba(248, 244, 232, 0.98);
+    background: #f8f4e8;
     box-shadow: 0 24px 55px rgba(0, 0, 0, 0.18);
   }
 
   .navbar-nav {
-    display: flex !important;
     flex-direction: column !important;
     align-items: flex-start !important;
     gap: 12px !important;
   }
 
-  .navbar-nav .nav-item {
-    width: 100%;
-  }
-
-  .navbar-nav .nav-link {
-    width: 100%;
-    color: #1f2430 !important;
-    font-size: 14px;
-    letter-spacing: 1.4px;
-    padding: 9px 0;
-  }
-
+  .navbar-nav .nav-item,
+  .navbar-nav .nav-link,
   .navbar-nav .btn-main {
     width: 100%;
-    margin-top: 8px;
-    justify-content: center;
   }
 }
 
-/* ================================
-   BUTTONS
-================================ */
+/* BUTTONS */
 
 .btn-main,
 .btn-outline-main {
@@ -170,7 +143,7 @@ img {
   font-weight: 850;
   letter-spacing: 1px;
   text-transform: uppercase;
-  transition: all 0.35s ease;
+  transition: 0.35s ease;
   cursor: pointer;
 }
 
@@ -184,7 +157,6 @@ img {
 .btn-main:hover {
   transform: translateY(-3px);
   box-shadow: 0 22px 48px rgba(31, 36, 48, 0.35);
-  color: #fff !important;
 }
 
 .btn-outline-main {
@@ -198,12 +170,9 @@ img {
   background: linear-gradient(135deg, #b9834b 0%, #1f2430 100%);
   border-color: transparent;
   transform: translateY(-3px);
-  color: #fff !important;
 }
 
-/* ================================
-   HERO
-================================ */
+/* HERO */
 
 .hero {
   min-height: 92vh;
@@ -213,9 +182,11 @@ img {
   text-align: center;
   padding: 120px 20px;
   color: white;
+  overflow: hidden;
 }
 
 .hero-content {
+  width: 100%;
   max-width: 950px;
   margin: 0 auto;
 }
@@ -245,9 +216,7 @@ img {
   flex-wrap: wrap;
 }
 
-/* ================================
-   GENERAL SECTIONS
-================================ */
+/* SECTIONS */
 
 .section-padding {
   padding: 90px 0;
@@ -263,6 +232,8 @@ img {
   color: #1f2430;
 }
 
+/* ABOUT */
+
 .about-section {
   padding: 100px 0;
 }
@@ -271,7 +242,6 @@ img {
   display: grid;
   grid-template-columns: 0.85fr 1.15fr;
   gap: 60px;
-  align-items: start;
 }
 
 .about-label,
@@ -290,19 +260,15 @@ img {
   letter-spacing: 4px;
   font-size: clamp(28px, 4vw, 42px);
   line-height: 1.1;
-  color: #1f2430;
 }
 
 .about-text {
   color: #555;
   line-height: 1.9;
   font-size: 17px;
-  max-width: 850px;
 }
 
-/* ================================
-   BRAND LOGOS
-================================ */
+/* BRAND LOGOS */
 
 .brands-logos-grid {
   display: grid;
@@ -322,7 +288,6 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: 0.35s ease;
 }
 
 .brand-logo-item:hover {
@@ -332,15 +297,12 @@ img {
 }
 
 .brand-logo-item img {
-  width: 100%;
   max-width: 130px;
   max-height: 90px;
   object-fit: contain;
 }
 
-/* ================================
-   ARTICLE FEATURE
-================================ */
+/* ARTICLE */
 
 .article-feature-box {
   max-width: 900px;
@@ -365,80 +327,38 @@ img {
   color: #444;
 }
 
-/* ================================
-   PERSONAL PROJECTS
-================================ */
+/* PERSONAL PROJECTS */
 
-.section-heading-wrap {
-  margin-bottom: 50px;
-}
-
-.personal-preview-grid {
+.personal-preview-grid,
+.personal-projects-gallery,
+.gallery-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 18px;
 }
 
 .personal-preview-grid img {
-  width: 100%;
   height: 520px;
   object-fit: cover;
   border-radius: 24px;
 }
 
-.personal-projects-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
-}
-
-.personal-project-item {
-  position: relative;
+.gallery-item {
   overflow: hidden;
   border-radius: 24px;
-  height: 350px;
-  box-shadow: 0 4px 15px rgba(31, 36, 48, 0.1);
-  transition: 0.3s ease;
-  cursor: pointer;
 }
 
-.personal-project-item:hover {
-  box-shadow: 0 12px 35px rgba(31, 36, 48, 0.15);
-  transform: translateY(-5px);
-}
-
-.project-image {
-  width: 100%;
+.gallery-item img {
   height: 100%;
   object-fit: cover;
 }
 
-.project-overlay {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(180deg, rgba(31, 36, 48, 0.7), rgba(31, 36, 48, 0.95));
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  padding: 30px;
-  color: white;
-  opacity: 0;
-  transition: 0.3s ease;
-}
-
-.personal-project-item:hover .project-overlay {
-  opacity: 1;
-}
-
-/* ================================
-   SERVICES / CONSULTATION
-================================ */
+/* SERVICES */
 
 .service-box {
   border-top: 1px solid #ccc;
   padding: 32px 24px;
   height: 100%;
-  transition: 0.3s ease;
 }
 
 .service-box:hover {
@@ -451,7 +371,6 @@ img {
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 19px;
-  color: #1f2430;
 }
 
 .service-box p {
@@ -459,18 +378,14 @@ img {
   line-height: 1.7;
 }
 
+/* CONSULTATION */
+
 .consultation-box {
   background: #fffaf0;
   padding: 60px 30px;
   border: 1px solid rgba(31, 36, 48, 0.14);
   text-align: center;
   border-radius: 26px;
-}
-
-.consultation-box p {
-  color: #555;
-  line-height: 1.7;
-  font-size: 16px;
 }
 
 .contact-email {
@@ -485,9 +400,7 @@ img {
   border-color: transparent;
 }
 
-/* ================================
-   BRANDS PAGE
-================================ */
+/* BRANDS PAGE */
 
 .brands-hero {
   background: linear-gradient(135deg, rgba(37, 41, 67, 0.9), rgba(31, 36, 48, 0.96));
@@ -502,13 +415,6 @@ img {
   text-transform: uppercase;
   letter-spacing: 4px;
   font-weight: 900;
-  margin-bottom: 20px;
-}
-
-.brands-hero p {
-  font-size: 18px;
-  color: rgba(255, 255, 255, 0.82);
-  letter-spacing: 1px;
 }
 
 .brand-detail-section {
@@ -538,7 +444,6 @@ img {
 }
 
 .brand-detail-image img {
-  width: 100%;
   height: 400px;
   object-fit: cover;
 }
@@ -548,7 +453,6 @@ img {
   text-transform: uppercase;
   letter-spacing: 3px;
   margin-bottom: 10px;
-  color: #1f2430;
   font-weight: 900;
 }
 
@@ -585,30 +489,6 @@ img {
   border: 1px solid rgba(37, 41, 67, 0.2);
 }
 
-/* ================================
-   GALLERIES
-================================ */
-
-.personal-projects-gallery,
-.gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 18px;
-}
-
-.gallery-item {
-  display: block;
-  overflow: hidden;
-  border-radius: 24px;
-  position: relative;
-}
-
-.gallery-item img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
 .brand-image-gallery,
 .vuse-gallery {
   display: grid;
@@ -618,14 +498,11 @@ img {
 
 .brand-image-gallery img,
 .vuse-gallery img {
-  width: 100%;
   border-radius: 20px;
   object-fit: cover;
 }
 
-/* ================================
-   FOOTER
-================================ */
+/* FOOTER */
 
 footer {
   background: #1f2430;
@@ -662,9 +539,7 @@ footer a:hover {
   margin-top: 22px;
 }
 
-/* ================================
-   WHATSAPP FLOAT
-================================ */
+/* WHATSAPP */
 
 .whatsapp-float {
   position: fixed;
@@ -688,26 +563,16 @@ footer a:hover {
   color: white;
 }
 
-/* ================================
-   TABLET
-================================ */
+/* TABLET */
 
 @media (max-width: 991px) {
-  .hero {
-    min-height: 86vh;
-  }
-
   .about-layout,
   .brand-detail-layout {
     grid-template-columns: 1fr;
     gap: 34px;
   }
 
-  .brands-logos-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 22px;
-  }
-
+  .brands-logos-grid,
   .personal-preview-grid,
   .personal-projects-gallery,
   .gallery-grid {
@@ -719,39 +584,52 @@ footer a:hover {
   }
 }
 
-/* ================================
-   MOBILE
-================================ */
+/* MOBILE */
 
 @media (max-width: 576px) {
+  .navbar {
+    padding: 22px 0;
+  }
+
   .navbar-brand {
     font-size: 13px;
     letter-spacing: 1.4px;
   }
 
   .hero {
-    min-height: 78vh;
-    padding: 90px 22px 65px;
+    min-height: calc(100vh - 90px);
+    padding: 80px 18px 120px;
+    align-items: center;
   }
 
   .hero-kicker {
+    max-width: 320px;
+    margin: 0 auto 18px;
     font-size: 10px;
+    line-height: 1.8;
     letter-spacing: 3px;
   }
 
   .hero h1 {
-    font-size: clamp(38px, 13vw, 58px);
-    line-height: 1;
-    letter-spacing: 2px;
+    font-size: clamp(39px, 11.2vw, 52px);
+    line-height: 0.96;
+    letter-spacing: 1px;
+    max-width: 360px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .hero-actions {
     flex-direction: column;
+    gap: 12px;
+    margin-top: 28px;
   }
 
   .btn-main,
   .btn-outline-main {
     width: 100%;
+    min-height: 54px;
+    padding: 14px 22px;
   }
 
   .section-padding {
@@ -791,44 +669,8 @@ footer a:hover {
 
   .whatsapp-float {
     right: 14px;
-    bottom: 14px;
+    bottom: 92px;
     padding: 12px 16px;
     font-size: 12px;
-  }
-
-  .whatsapp-float svg {
-    width: 16px !important;
-    height: 16px !important;
-  }
-}
-
-@media (max-width: 576px) {
-  .hero h1 {
-    font-size: clamp(44px, 15vw, 64px);
-    line-height: 0.95;
-    letter-spacing: 1px;
-  }
-
-  .hero-kicker {
-    max-width: 320px;
-    margin-left: auto;
-    margin-right: auto;
-    line-height: 1.8;
-  }
-
-  .hero-actions {
-    gap: 12px;
-    margin-top: 28px;
-  }
-
-  .btn-main,
-  .btn-outline-main {
-    min-height: 54px;
-    padding: 14px 24px;
-  }
-
-  .whatsapp-float {
-    bottom: 82px;
-    right: 16px;
   }
 }
