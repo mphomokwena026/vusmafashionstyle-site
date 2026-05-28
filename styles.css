@@ -1,3 +1,7 @@
+/* ================================
+   VUSMAFASHION STYLES — CLEAN CSS
+================================ */
+
 * {
   margin: 0;
   padding: 0;
@@ -26,80 +30,144 @@ img {
   display: block;
 }
 
-/* NAVBAR */
+/* ================================
+   NAVBAR
+================================ */
+
 .navbar {
-  background: rgba(248, 244, 232, 0.96);
-  backdrop-filter: blur(14px);
-  padding: 16px 0;
-  border-bottom: 1px solid rgba(31, 36, 48, 0.12);
+  position: sticky;
+  top: 0;
   z-index: 9999;
+  background: rgba(248, 244, 232, 0.97);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(31, 36, 48, 0.12);
+  padding: 16px 0;
 }
 
 .navbar .container {
-  max-width: 1200px;
+  max-width: 1240px;
+  position: relative;
 }
 
 .navbar-brand {
-  font-size: 15px;
-  font-weight: 800;
-  letter-spacing: 2px;
-  color: #1f2430;
-  white-space: nowrap;
-}
-
-.navbar-nav {
-  align-items: center;
-}
-
-.nav-link {
   color: #1f2430 !important;
-  font-size: 12px;
-  letter-spacing: 1px;
+  font-size: 15px;
+  font-weight: 900;
+  letter-spacing: 3px;
   white-space: nowrap;
 }
 
-.nav-link.active,
-.nav-link:hover {
-  color: #b9834b !important;
+.navbar-toggler {
+  border: 2px solid #1f2430;
+  border-radius: 12px;
+  padding: 9px 11px;
+  box-shadow: none !important;
 }
 
-/* MOBILE NAVBAR */
-@media (max-width: 991px) {
-  .navbar-collapse {
-    margin-top: 16px;
-    padding: 22px;
-    border-radius: 22px;
-    background: #f8f4e8;
-    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.14);
+.navbar-toggler:focus {
+  box-shadow: none !important;
+}
+
+/* Desktop navbar */
+@media (min-width: 1200px) {
+  .navbar-expand-lg .navbar-toggler {
+    display: none !important;
+  }
+
+  .navbar-expand-lg .navbar-collapse {
+    display: flex !important;
+    flex-basis: auto;
   }
 
   .navbar-nav {
+    display: flex;
+    align-items: center;
+    gap: 24px !important;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  .navbar-nav .nav-link {
+    color: #1f2430 !important;
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    white-space: nowrap;
+    padding: 8px 0;
+  }
+
+  .navbar-nav .nav-link:hover,
+  .navbar-nav .nav-link.active {
+    color: #b9834b !important;
+  }
+}
+
+/* Laptop/tablet/mobile dropdown navbar */
+@media (max-width: 1199px) {
+  .navbar-expand-lg .navbar-toggler {
+    display: block !important;
+    margin-left: auto;
+  }
+
+  .navbar-expand-lg .navbar-collapse {
+    display: none !important;
+  }
+
+  .navbar-expand-lg .navbar-collapse.show {
+    display: block !important;
+  }
+
+  .navbar-collapse {
+    position: absolute;
+    top: calc(100% + 12px);
+    left: 12px;
+    right: 12px;
+    width: auto;
+    padding: 22px;
+    border-radius: 24px;
+    background: rgba(248, 244, 232, 0.98);
+    box-shadow: 0 24px 55px rgba(0, 0, 0, 0.18);
+  }
+
+  .navbar-nav {
+    display: flex !important;
+    flex-direction: column !important;
     align-items: flex-start !important;
     gap: 12px !important;
   }
 
-  .nav-link {
-    font-size: 14px;
-    padding: 8px 0;
+  .navbar-nav .nav-item {
+    width: 100%;
   }
 
-  .navbar .btn-main {
-    margin-top: 8px;
+  .navbar-nav .nav-link {
     width: 100%;
+    color: #1f2430 !important;
+    font-size: 14px;
+    letter-spacing: 1.4px;
+    padding: 9px 0;
+  }
+
+  .navbar-nav .btn-main {
+    width: 100%;
+    margin-top: 8px;
+    justify-content: center;
   }
 }
 
-/* BUTTONS */
+/* ================================
+   BUTTONS
+================================ */
+
 .btn-main,
 .btn-outline-main {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   min-height: 48px;
-  padding: 14px 28px;
+  padding: 14px 30px;
   border-radius: 999px;
   font-size: 13px;
-  font-weight: 800;
+  font-weight: 850;
   letter-spacing: 1px;
   text-transform: uppercase;
   transition: all 0.35s ease;
@@ -109,17 +177,18 @@ img {
 .btn-main {
   border: none;
   color: #fff !important;
-  background: linear-gradient(135deg, #1f2430 0%, #4b3b2f 45%, #b9834b 100%);
+  background: linear-gradient(135deg, #1f2430 0%, #4d3529 45%, #b9834b 100%);
   box-shadow: 0 14px 30px rgba(31, 36, 48, 0.25);
 }
 
 .btn-main:hover {
   transform: translateY(-3px);
-  box-shadow: 0 20px 45px rgba(31, 36, 48, 0.35);
+  box-shadow: 0 22px 48px rgba(31, 36, 48, 0.35);
+  color: #fff !important;
 }
 
 .btn-outline-main {
-  border: 1px solid rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.85);
   color: #fff !important;
   background: rgba(255, 255, 255, 0.08);
   backdrop-filter: blur(10px);
@@ -129,9 +198,13 @@ img {
   background: linear-gradient(135deg, #b9834b 0%, #1f2430 100%);
   border-color: transparent;
   transform: translateY(-3px);
+  color: #fff !important;
 }
 
-/* HERO */
+/* ================================
+   HERO
+================================ */
+
 .hero {
   min-height: 92vh;
   display: flex;
@@ -143,7 +216,7 @@ img {
 }
 
 .hero-content {
-  max-width: 900px;
+  max-width: 950px;
   margin: 0 auto;
 }
 
@@ -152,7 +225,7 @@ img {
   letter-spacing: 4px;
   font-size: 12px;
   margin-bottom: 18px;
-  color: rgba(255, 255, 255, 0.85);
+  color: rgba(255, 255, 255, 0.86);
 }
 
 .hero h1 {
@@ -161,7 +234,7 @@ img {
   text-transform: uppercase;
   letter-spacing: 4px;
   margin-bottom: 26px;
-  font-weight: 800;
+  font-weight: 900;
 }
 
 .hero-actions {
@@ -172,7 +245,10 @@ img {
   flex-wrap: wrap;
 }
 
-/* SECTIONS */
+/* ================================
+   GENERAL SECTIONS
+================================ */
+
 .section-padding {
   padding: 90px 0;
 }
@@ -183,11 +259,10 @@ img {
   letter-spacing: 4px;
   margin-bottom: 50px;
   font-size: clamp(28px, 4vw, 38px);
-  font-weight: 800;
+  font-weight: 900;
   color: #1f2430;
 }
 
-/* ABOUT */
 .about-section {
   padding: 100px 0;
 }
@@ -225,7 +300,10 @@ img {
   max-width: 850px;
 }
 
-/* BRAND LOGOS */
+/* ================================
+   BRAND LOGOS
+================================ */
+
 .brands-logos-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(160px, 1fr));
@@ -238,7 +316,7 @@ img {
 .brand-logo-item {
   min-height: 150px;
   padding: 28px;
-  border-radius: 22px;
+  border-radius: 24px;
   background: rgba(255, 255, 255, 0.78);
   border: 1px solid rgba(31, 36, 48, 0.1);
   display: flex;
@@ -260,12 +338,15 @@ img {
   object-fit: contain;
 }
 
-/* ARTICLE */
+/* ================================
+   ARTICLE FEATURE
+================================ */
+
 .article-feature-box {
   max-width: 900px;
   margin: 0 auto;
   padding: 60px;
-  border-radius: 28px;
+  border-radius: 30px;
   background: #f5efe4;
   text-align: center;
 }
@@ -284,7 +365,10 @@ img {
   color: #444;
 }
 
-/* PERSONAL PROJECT PREVIEW */
+/* ================================
+   PERSONAL PROJECTS
+================================ */
+
 .section-heading-wrap {
   margin-bottom: 50px;
 }
@@ -299,10 +383,57 @@ img {
   width: 100%;
   height: 520px;
   object-fit: cover;
-  border-radius: 22px;
+  border-radius: 24px;
 }
 
-/* SERVICES */
+.personal-projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.personal-project-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 24px;
+  height: 350px;
+  box-shadow: 0 4px 15px rgba(31, 36, 48, 0.1);
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.personal-project-item:hover {
+  box-shadow: 0 12px 35px rgba(31, 36, 48, 0.15);
+  transform: translateY(-5px);
+}
+
+.project-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.project-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(31, 36, 48, 0.7), rgba(31, 36, 48, 0.95));
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 30px;
+  color: white;
+  opacity: 0;
+  transition: 0.3s ease;
+}
+
+.personal-project-item:hover .project-overlay {
+  opacity: 1;
+}
+
+/* ================================
+   SERVICES / CONSULTATION
+================================ */
+
 .service-box {
   border-top: 1px solid #ccc;
   padding: 32px 24px;
@@ -328,16 +459,174 @@ img {
   line-height: 1.7;
 }
 
-/* CONSULTATION */
 .consultation-box {
   background: #fffaf0;
   padding: 60px 30px;
   border: 1px solid rgba(31, 36, 48, 0.14);
   text-align: center;
-  border-radius: 24px;
+  border-radius: 26px;
 }
 
-/* FOOTER */
+.consultation-box p {
+  color: #555;
+  line-height: 1.7;
+  font-size: 16px;
+}
+
+.contact-email {
+  border: 1px solid #252943;
+  color: #252943 !important;
+  background: transparent;
+}
+
+.contact-email:hover {
+  background: linear-gradient(135deg, #1f2430, #b9834b);
+  color: white !important;
+  border-color: transparent;
+}
+
+/* ================================
+   BRANDS PAGE
+================================ */
+
+.brands-hero {
+  background: linear-gradient(135deg, rgba(37, 41, 67, 0.9), rgba(31, 36, 48, 0.96));
+  color: white;
+  padding: 120px 20px;
+  text-align: center;
+  margin-top: 80px;
+}
+
+.brands-hero h1 {
+  font-size: clamp(42px, 8vw, 72px);
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+.brands-hero p {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.82);
+  letter-spacing: 1px;
+}
+
+.brand-detail-section {
+  padding: 80px 0;
+  border-bottom: 1px solid rgba(31, 36, 48, 0.08);
+}
+
+.brand-detail-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.brand-detail-layout.reverse {
+  direction: rtl;
+}
+
+.brand-detail-layout.reverse > * {
+  direction: ltr;
+}
+
+.brand-detail-image {
+  overflow: hidden;
+  border-radius: 24px;
+  box-shadow: 0 10px 40px rgba(31, 36, 48, 0.1);
+}
+
+.brand-detail-image img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.brand-detail-content h2 {
+  font-size: clamp(32px, 5vw, 48px);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+  color: #1f2430;
+  font-weight: 900;
+}
+
+.brand-category {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 13px;
+  color: #b9834b;
+  font-weight: 850;
+  margin-bottom: 20px;
+}
+
+.brand-description {
+  color: #555;
+  line-height: 1.9;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.brand-services {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 30px;
+}
+
+.service-tag {
+  background: #fffaf0;
+  color: #252943;
+  padding: 10px 16px;
+  border-radius: 25px;
+  font-size: 13px;
+  font-weight: 700;
+  border: 1px solid rgba(37, 41, 67, 0.2);
+}
+
+/* ================================
+   GALLERIES
+================================ */
+
+.personal-projects-gallery,
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.gallery-item {
+  display: block;
+  overflow: hidden;
+  border-radius: 24px;
+  position: relative;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.brand-image-gallery,
+.vuse-gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+.brand-image-gallery img,
+.vuse-gallery img {
+  width: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+/* ================================
+   FOOTER
+================================ */
+
 footer {
   background: #1f2430;
   color: white;
@@ -373,7 +662,10 @@ footer a:hover {
   margin-top: 22px;
 }
 
-/* WHATSAPP FLOAT */
+/* ================================
+   WHATSAPP FLOAT
+================================ */
+
 .whatsapp-float {
   position: fixed;
   bottom: 20px;
@@ -396,120 +688,10 @@ footer a:hover {
   color: white;
 }
 
-/* BRANDS PAGE */
-.brands-hero {
-  background: linear-gradient(135deg, rgba(37, 41, 67, 0.88), rgba(31, 36, 48, 0.95));
-  color: white;
-  padding: 120px 20px;
-  text-align: center;
-  margin-top: 80px;
-}
+/* ================================
+   TABLET
+================================ */
 
-.brands-hero h1 {
-  font-size: clamp(42px, 8vw, 72px);
-  text-transform: uppercase;
-  letter-spacing: 4px;
-  font-weight: 800;
-}
-
-.brand-detail-section {
-  padding: 80px 0;
-  border-bottom: 1px solid rgba(31, 36, 48, 0.08);
-}
-
-.brand-detail-layout {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 60px;
-  align-items: center;
-}
-
-.brand-detail-layout.reverse {
-  direction: rtl;
-}
-
-.brand-detail-layout.reverse > * {
-  direction: ltr;
-}
-
-.brand-detail-image,
-.gallery-item {
-  overflow: hidden;
-  border-radius: 22px;
-  box-shadow: 0 10px 40px rgba(31, 36, 48, 0.1);
-}
-
-.brand-detail-image img {
-  width: 100%;
-  height: 400px;
-  object-fit: cover;
-}
-
-.brand-detail-content h2 {
-  font-size: clamp(32px, 5vw, 48px);
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  margin-bottom: 10px;
-  font-weight: 800;
-}
-
-.brand-category {
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-size: 13px;
-  color: #b9834b;
-  font-weight: 800;
-  margin-bottom: 20px;
-}
-
-.brand-description {
-  color: #555;
-  line-height: 1.9;
-  font-size: 16px;
-  margin-bottom: 20px;
-}
-
-.brand-services {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  margin-top: 30px;
-}
-
-.service-tag {
-  background: #fffaf0;
-  color: #252943;
-  padding: 10px 16px;
-  border-radius: 25px;
-  font-size: 13px;
-  font-weight: 700;
-  border: 1px solid rgba(37, 41, 67, 0.2);
-}
-
-/* GALLERIES */
-.personal-projects-gallery,
-.gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 18px;
-}
-
-.brand-image-gallery,
-.vuse-gallery {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 16px;
-}
-
-.brand-image-gallery img,
-.vuse-gallery img,
-.gallery-item img {
-  width: 100%;
-  border-radius: 18px;
-  object-fit: cover;
-}
-
-/* TABLET */
 @media (max-width: 991px) {
   .hero {
     min-height: 86vh;
@@ -537,11 +719,14 @@ footer a:hover {
   }
 }
 
-/* MOBILE */
+/* ================================
+   MOBILE
+================================ */
+
 @media (max-width: 576px) {
   .navbar-brand {
     font-size: 13px;
-    letter-spacing: 1.5px;
+    letter-spacing: 1.4px;
   }
 
   .hero {
@@ -549,8 +734,14 @@ footer a:hover {
     padding: 90px 22px 65px;
   }
 
+  .hero-kicker {
+    font-size: 10px;
+    letter-spacing: 3px;
+  }
+
   .hero h1 {
     font-size: clamp(38px, 13vw, 58px);
+    line-height: 1;
     letter-spacing: 2px;
   }
 
@@ -604,44 +795,9 @@ footer a:hover {
     padding: 12px 16px;
     font-size: 12px;
   }
-}
 
-/* FIX NAVBAR CROWDING ON SMALL LAPTOP / ZOOMED DESKTOP */
-
-@media (max-width: 1200px) {
-  .navbar-expand-lg .navbar-collapse {
-    display: none !important;
-  }
-
-  .navbar-expand-lg .navbar-collapse.show {
-    display: block !important;
-  }
-
-  .navbar-expand-lg .navbar-toggler {
-    display: block !important;
-  }
-
-  .navbar-collapse {
-    margin-top: 16px;
-    padding: 22px;
-    border-radius: 22px;
-    background: #f8f4e8;
-    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.14);
-  }
-
-  .navbar-nav {
-    align-items: flex-start !important;
-    gap: 12px !important;
-  }
-
-  .nav-link {
-    padding: 8px 0;
-    font-size: 14px;
-  }
-
-  .navbar .btn-main {
-    width: 100%;
-    margin-top: 8px;
+  .whatsapp-float svg {
+    width: 16px !important;
+    height: 16px !important;
   }
 }
-
