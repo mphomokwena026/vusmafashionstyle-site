@@ -801,3 +801,34 @@ footer a:hover {
     height: 16px !important;
   }
 }
+
+@media (max-width: 576px) {
+  .hero h1 {
+    font-size: clamp(44px, 15vw, 64px);
+    line-height: 0.95;
+    letter-spacing: 1px;
+  }
+
+  .hero-kicker {
+    max-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.8;
+  }
+
+  .hero-actions {
+    gap: 12px;
+    margin-top: 28px;
+  }
+
+  .btn-main,
+  .btn-outline-main {
+    min-height: 54px;
+    padding: 14px 24px;
+  }
+
+  .whatsapp-float {
+    bottom: 82px;
+    right: 16px;
+  }
+}
