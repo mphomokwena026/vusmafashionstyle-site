@@ -605,3 +605,56 @@ footer a:hover {
     font-size: 12px;
   }
 }
+
+/* FIX NAVBAR CROWDING ON SMALL LAPTOP / ZOOMED DESKTOP */
+
+@media (max-width: 1200px) {
+  .navbar-expand-lg .navbar-collapse {
+    display: none !important;
+  }
+
+  .navbar-expand-lg .navbar-collapse.show {
+    display: block !important;
+  }
+
+  .navbar-expand-lg .navbar-toggler {
+    display: block !important;
+  }
+
+  .navbar-collapse {
+    margin-top: 16px;
+    padding: 22px;
+    border-radius: 22px;
+    background: #f8f4e8;
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.14);
+  }
+
+  .navbar-nav {
+    align-items: flex-start !important;
+    gap: 12px !important;
+  }
+
+  .nav-link {
+    padding: 8px 0;
+    font-size: 14px;
+  }
+
+  .navbar .btn-main {
+    width: 100%;
+    margin-top: 8px;
+  }
+}
+
+@media (min-width: 1201px) {
+  .navbar-expand-lg .navbar-collapse {
+    display: flex !important;
+  }
+
+  .navbar-expand-lg .navbar-toggler {
+    display: none !important;
+  }
+
+  .navbar-nav {
+    gap: 24px !important;
+  }
+}
