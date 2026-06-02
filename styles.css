@@ -61,6 +61,8 @@ img {
   box-shadow: none !important;
 }
 
+/* NAV DESKTOP */
+
 @media (min-width: 1200px) {
   .navbar-expand-lg .navbar-toggler {
     display: none !important;
@@ -90,6 +92,8 @@ img {
     color: #b9834b !important;
   }
 }
+
+/* NAV TABLET/MOBILE */
 
 @media (max-width: 1199px) {
   .navbar-expand-lg .navbar-toggler {
@@ -234,39 +238,39 @@ img {
 
 /* ABOUT */
 
-.about-section{
-  padding:120px 0;
-  background:#f8f4e8;
+.about-section {
+  padding: 120px 0;
+  background: #f8f4e8;
 }
 
-.about-layout{
-  display:grid;
-  grid-template-columns:0.7fr 1.3fr;
-  gap:80px;
-  align-items:start;
+.about-layout {
+  display: grid;
+  grid-template-columns: 0.7fr 1.3fr;
+  gap: 80px;
+  align-items: start;
 }
 
-.about-label{
-  text-transform:uppercase;
-  letter-spacing:4px;
-  font-size:13px;
-  color:#777;
-  margin-bottom:24px;
+.about-label {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 13px;
+  color: #777;
+  margin-bottom: 24px;
 }
 
-.about-heading{
-  text-transform:uppercase;
-  letter-spacing:4px;
-  font-size:clamp(38px,5vw,58px);
-  line-height:1.05;
-  color:#1f2430;
+.about-heading {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: clamp(38px, 5vw, 58px);
+  line-height: 1.05;
+  color: #1f2430;
 }
 
-.about-text{
-  color:#555;
-  line-height:2.1;
-  font-size:18px;
-  max-width:760px;
+.about-text {
+  color: #555;
+  line-height: 2.1;
+  font-size: 18px;
+  max-width: 760px;
 }
 
 /* BRAND LOGOS */
@@ -406,19 +410,18 @@ img {
 .brands-hero {
   background:
     linear-gradient(
-      rgba(31, 36, 48, 0.58),
-      rgba(31, 36, 48, 0.82)
+      rgba(31, 36, 48, 0.62),
+      rgba(31, 36, 48, 0.88)
     ),
     url("images/brand-hero.jpg");
-
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-
   color: white;
   padding: 150px 24px;
   text-align: center;
   margin-top: 80px;
+  overflow: hidden;
 }
 
 .brands-hero h1 {
@@ -429,6 +432,12 @@ img {
   line-height: 1.05;
   max-width: 900px;
   margin: 0 auto;
+}
+
+.brands-hero p {
+  max-width: 760px;
+  margin: 22px auto 0;
+  line-height: 1.8;
 }
 
 .brand-detail-section {
@@ -566,7 +575,6 @@ footer a:hover {
   font-weight: bold;
   z-index: 999;
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
-  align-items: center;
   font-size: 14px;
 }
 
@@ -599,6 +607,10 @@ footer a:hover {
 /* MOBILE */
 
 @media (max-width: 576px) {
+  html {
+    scroll-padding-top: 110px;
+  }
+
   .navbar {
     padding: 22px 0;
   }
@@ -620,7 +632,6 @@ footer a:hover {
     font-size: 10px;
     line-height: 1.8;
     letter-spacing: 3px;
-
   }
 
   .hero h1 {
@@ -649,14 +660,37 @@ footer a:hover {
     padding: 58px 0;
   }
 
+  .section-title {
+    font-size: 30px;
+    letter-spacing: 3px;
+    margin-bottom: 34px;
+  }
+
   .about-section {
-    padding: 90px 24px;
+    padding: 96px 24px;
+  }
+
+  .about-layout {
+    grid-template-columns: 1fr;
+    gap: 44px;
+  }
+
+  .about-label {
+    font-size: 12px;
+    letter-spacing: 3px;
+    line-height: 1.6;
+  }
+
+  .about-heading {
+    font-size: 42px;
+    line-height: 1.05;
+    letter-spacing: 3px;
   }
 
   .about-text {
-    font-size: 18px;
+    font-size: 17px;
     line-height: 2;
-    max-width: 100%;  
+    max-width: 100%;
   }
 
   .article-feature-box {
@@ -665,27 +699,71 @@ footer a:hover {
 
   .brands-logos-grid {
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    gap: 18px;
+    padding: 30px 0;
   }
-  
+
+  .brand-logo-item {
+    min-height: 145px;
+    padding: 22px;
+    border-radius: 24px;
+  }
+
+  .brand-logo-item img {
+    max-width: 105px;
+    max-height: 78px;
+  }
+
   .personal-preview-grid,
   .personal-projects-gallery,
   .gallery-grid {
     grid-template-columns: 1fr;
   }
 
-  .brands-hero h1 {
-    font-size: 42px !important;
-    line-height: 1.1;
-    letter-spacing: 2px;
-  }
-  
-  .brand-logo-item {
-    min-height: 130px;
-  }
-
   .personal-preview-grid img {
     height: auto;
+  }
+
+  .brands-hero {
+    padding: 92px 24px;
+    margin-top: 40px;
+    overflow: hidden;
+    background-position: center;
+  }
+
+  .brands-hero h1 {
+    font-size: 34px !important;
+    line-height: 1.12 !important;
+    letter-spacing: 2px !important;
+    max-width: 320px;
+    margin: 0 auto;
+    word-break: normal;
+    overflow-wrap: normal;
+  }
+
+  .brands-hero p {
+    font-size: 16px;
+    line-height: 1.7;
+    max-width: 320px;
+    margin: 20px auto 0;
+  }
+
+  .brand-detail-section {
+    padding: 64px 0;
+  }
+
+  .brand-detail-layout {
+    gap: 30px;
+  }
+
+  .brand-detail-content h2 {
+    font-size: 32px;
+    letter-spacing: 2px;
+  }
+
+  .brand-description {
+    font-size: 15.5px;
+    line-height: 1.8;
   }
 
   .brand-detail-image img {
@@ -693,9 +771,9 @@ footer a:hover {
   }
 
   .whatsapp-float {
-    right: 14px;
-    bottom: 90px;
-    padding: 12px 16px;
-    font-size: 12px;
+    right: 18px !important;
+    bottom: 24px !important;
+    padding: 12px 22px !important;
+    font-size: 14px !important;
   }
 }
