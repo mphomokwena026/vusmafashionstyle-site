@@ -547,14 +547,12 @@ footer a:hover {
   right: 20px;
   background: linear-gradient(135deg, #25d366, #128c7e);
   color: white;
-  padding: 14px 20px;
+  padding: 14px 28px;
   border-radius: 999px;
   font-weight: bold;
   z-index: 999;
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
-  display: flex;
   align-items: center;
-  gap: 6px;
   font-size: 14px;
 }
 
