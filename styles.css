@@ -424,6 +424,9 @@ img {
   text-transform: uppercase;
   letter-spacing: 4px;
   font-weight: 900;
+  line-height: 1.05;
+  max-width: 900px;
+  margin: auto;
 }
 
 .brand-detail-section {
