@@ -649,7 +649,11 @@ footer a:hover {
     padding: 40px 22px;
   }
 
-  .brands-logos-grid,
+  .brands-logos-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
   .personal-preview-grid,
   .personal-projects-gallery,
   .gallery-grid {
