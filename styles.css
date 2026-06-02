@@ -557,7 +557,7 @@ footer a:hover {
 
 .whatsapp-float {
   position: fixed;
-  bottom: 20px;
+  bottom: 90px;
   right: 20px;
   background: linear-gradient(135deg, #25d366, #128c7e);
   color: white;
@@ -620,6 +620,7 @@ footer a:hover {
     font-size: 10px;
     line-height: 1.8;
     letter-spacing: 3px;
+
   }
 
   .hero h1 {
@@ -653,7 +654,7 @@ footer a:hover {
   }
 
   .about-text {
-    font-size: 17px;
+    font-size: 18px;
     line-height: 2;
     max-width: 100%;  
   }
@@ -673,6 +674,12 @@ footer a:hover {
     grid-template-columns: 1fr;
   }
 
+  .brands-hero h1 {
+    font-size: 42px !important;
+    line-height: 1.1;
+    letter-spacing: 2px;
+  }
+  
   .brand-logo-item {
     min-height: 130px;
   }
@@ -687,7 +694,7 @@ footer a:hover {
 
   .whatsapp-float {
     right: 14px;
-    bottom: 92px;
+    bottom: 90px;
     padding: 12px 16px;
     font-size: 12px;
   }
