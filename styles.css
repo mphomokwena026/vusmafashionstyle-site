@@ -949,19 +949,20 @@ footer hr {
   }
 
   .brands-logos-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 12px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+    padding: 8px 12px;
   }
 
   .brand-logo-item {
-    min-height: 130px;
-    padding: 16px;
-    border-radius: 16px;
+    min-height: 90px;
+    padding: 10px;
+    border-radius: 12px;
   }
 
   .brand-logo-item img {
-    max-width: 90px;
-    max-height: 65px;
+    max-width: 70px;
+    max-height: 50px;
   }
 
   .section-mini-title {
