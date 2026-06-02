@@ -24,8 +24,6 @@ a {
 img {
   width: 100%;
   display: block;
-  max-width: 100%;
-  height: auto;
 }
 
 /* NAVBAR */
@@ -39,12 +37,9 @@ img {
   padding: 16px 0;
 }
 
-.navbar .container,
-.navbar .container-fluid {
+.navbar .container {
   max-width: 1240px;
   position: relative;
-  padding: 0 16px;
-  margin: 0 auto;
 }
 
 .navbar-brand {
@@ -60,7 +55,6 @@ img {
   border-radius: 12px;
   padding: 9px 11px;
   box-shadow: none !important;
-  background: none;
 }
 
 .navbar-toggler:focus {
@@ -124,8 +118,6 @@ img {
     border-radius: 24px;
     background: #f8f4e8;
     box-shadow: 0 24px 55px rgba(0, 0, 0, 0.18);
-    max-height: calc(100vh - 120px);
-    overflow-y: auto;
   }
 
   .navbar-nav {
@@ -171,10 +163,6 @@ img {
   box-shadow: 0 22px 48px rgba(31, 36, 48, 0.35);
 }
 
-.btn-main:active {
-  transform: translateY(-1px);
-}
-
 .btn-outline-main {
   border: 1px solid rgba(255, 255, 255, 0.85);
   color: #fff !important;
@@ -191,37 +179,20 @@ img {
 /* HERO */
 
 .hero {
-  min-height: 100vh;
+  min-height: 92vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.hero-overlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.35);
-  z-index: 1;
-}
-
-.hero-wrapper {
-  position: relative;
-  z-index: 2;
-  max-width: 1240px;
-  margin: 0 auto;
-  padding: 0 16px;
+  text-align: center;
+  padding: 120px 20px;
+  color: white;
+  overflow: hidden;
 }
 
 .hero-content {
   width: 100%;
   max-width: 950px;
   margin: 0 auto;
-  text-align: center;
-  color: white;
 }
 
 .hero-kicker {
@@ -239,7 +210,6 @@ img {
   letter-spacing: 4px;
   margin-bottom: 26px;
   font-weight: 900;
-  word-break: break-word;
 }
 
 .hero-actions {
@@ -264,29 +234,12 @@ img {
   font-size: clamp(28px, 4vw, 38px);
   font-weight: 900;
   color: #1f2430;
-  padding: 0 16px;
-}
-
-.section-mini-title {
-  text-transform: uppercase;
-  letter-spacing: 4px;
-  font-size: 13px;
-  color: #b9834b;
-  margin-bottom: 12px;
-  text-align: center;
-}
-
-.container,
-.container-fluid {
-  max-width: 1240px;
-  margin: 0 auto;
-  padding: 0 16px;
 }
 
 /* ABOUT */
 
 .about-section {
-  padding: 120px 16px;
+  padding: 120px 0;
   background: #f8f4e8;
 }
 
@@ -295,8 +248,6 @@ img {
   grid-template-columns: 0.7fr 1.3fr;
   gap: 80px;
   align-items: start;
-  max-width: 1240px;
-  margin: 0 auto;
 }
 
 .about-label {
@@ -322,15 +273,41 @@ img {
   max-width: 760px;
 }
 
-/* ARTICLE */
+/* BRAND LOGOS */
 
-.article-label {
-  text-transform: uppercase;
-  letter-spacing: 4px;
-  font-size: 13px;
-  color: #b9834b;
-  margin-bottom: 18px;
+.brands-logos-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(160px, 1fr));
+  gap: 32px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 0;
 }
+
+.brand-logo-item {
+  min-height: 150px;
+  padding: 28px;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.78);
+  border: 1px solid rgba(31, 36, 48, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.brand-logo-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 40px rgba(31, 36, 48, 0.16);
+  border-color: #b9834b;
+}
+
+.brand-logo-item img {
+  max-width: 130px;
+  max-height: 90px;
+  object-fit: contain;
+}
+
+/* ARTICLE */
 
 .article-feature-box {
   max-width: 900px;
@@ -355,56 +332,7 @@ img {
   color: #444;
 }
 
-/* BRAND LOGOS */
-
-.brands-description {
-  text-align: center;
-  margin-bottom: 40px;
-  color: #666;
-  font-size: 16px;
-  max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.brands-logos-grid {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(160px, 1fr));
-  gap: 32px;
-  max-width: 1100px;
-  margin: 0 auto;
-}
-
-.brand-logo-item {
-  min-height: 150px;
-  padding: 28px;
-  border-radius: 24px;
-  background: rgba(255, 255, 255, 0.78);
-  border: 1px solid rgba(31, 36, 48, 0.1);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.35s ease;
-}
-
-.brand-logo-item:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 18px 40px rgba(31, 36, 48, 0.16);
-  border-color: #b9834b;
-}
-
-.brand-logo-item img {
-  max-width: 130px;
-  max-height: 90px;
-  object-fit: contain;
-}
-
 /* PERSONAL PROJECTS */
-
-.section-heading-wrap {
-  text-align: center;
-  margin-bottom: 40px;
-}
 
 .personal-preview-grid,
 .personal-projects-gallery,
@@ -412,8 +340,6 @@ img {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 18px;
-  max-width: 1240px;
-  margin: 0 auto;
 }
 
 .personal-preview-grid img {
@@ -434,19 +360,10 @@ img {
 
 /* SERVICES */
 
-.services-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
-  max-width: 1240px;
-  margin: 0 auto;
-}
-
 .service-box {
   border-top: 1px solid #ccc;
   padding: 32px 24px;
   height: 100%;
-  transition: all 0.35s ease;
 }
 
 .service-box:hover {
@@ -464,7 +381,6 @@ img {
 .service-box p {
   color: #666;
   line-height: 1.7;
-  font-size: 16px;
 }
 
 /* CONSULTATION */
@@ -475,15 +391,6 @@ img {
   border: 1px solid rgba(31, 36, 48, 0.14);
   text-align: center;
   border-radius: 26px;
-  max-width: 700px;
-  margin: 0 auto;
-}
-
-.consultation-text {
-  font-size: 16px;
-  color: #555;
-  margin-bottom: 30px;
-  line-height: 1.8;
 }
 
 .contact-email {
@@ -498,34 +405,7 @@ img {
   border-color: transparent;
 }
 
-/* CONTACT SECTION */
-
-.contact-subtitle {
-  text-align: center;
-  font-size: 16px;
-  color: #666;
-  margin-bottom: 30px;
-  max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.contact-actions {
-  display: flex;
-  justify-content: center;
-  gap: 16px;
-  flex-wrap: wrap;
-}
-
 /* BRANDS PAGE */
-
-.projects-label {
-  text-transform: uppercase;
-  letter-spacing: 4px;
-  font-size: 13px;
-  color: rgba(255, 255, 255, 0.86);
-  margin-bottom: 18px;
-}
 
 .brands-hero {
   background:
@@ -552,18 +432,16 @@ img {
   line-height: 1.05;
   max-width: 900px;
   margin: 0 auto;
-  word-break: break-word;
 }
 
 .brands-hero p {
   max-width: 760px;
   margin: 22px auto 0;
   line-height: 1.8;
-  padding: 0 16px;
 }
 
 .brand-detail-section {
-  padding: 80px 16px;
+  padding: 80px 0;
   border-bottom: 1px solid rgba(31, 36, 48, 0.08);
 }
 
@@ -572,8 +450,6 @@ img {
   grid-template-columns: 1fr 1fr;
   gap: 60px;
   align-items: center;
-  max-width: 1240px;
-  margin: 0 auto;
 }
 
 .brand-detail-layout.reverse {
@@ -593,7 +469,6 @@ img {
 .brand-detail-image img {
   height: 400px;
   object-fit: cover;
-  width: 100%;
 }
 
 .brand-detail-content h2 {
@@ -642,106 +517,65 @@ img {
   display: grid;
   grid-template-columns: 1fr;
   gap: 16px;
-  width: 100%;
 }
 
 .brand-image-gallery img,
 .vuse-gallery img {
   border-radius: 20px;
   object-fit: cover;
-  width: 100%;
-  height: auto;
-}
-
-/* CTA SECTION */
-
-.cta-section {
-  padding: 90px 16px;
-  text-align: center;
-}
-
-.cta-text {
-  font-size: 16px;
-  color: #666;
-  margin-bottom: 30px;
-  max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.cta-actions {
-  display: flex;
-  justify-content: center;
-  gap: 16px;
-  flex-wrap: wrap;
 }
 
 /* FOOTER */
 
 footer {
+  position: relative;
+  overflow: hidden;
   background: #1f2430;
   color: white;
-  padding: 70px 16px 26px;
+  padding: 100px 0 40px;
   margin-top: 60px;
 }
 
-footer .container,
-footer .container-fluid {
-  max-width: 1240px;
-  margin: 0 auto;
-  padding: 0;
+footer::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("https://i.imgur.com/pCZHQ6r.jpg") no-repeat center;
+  background-size: 500px;
+  opacity: 0.06;
 }
 
-.footer-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 40px;
-  margin-bottom: 40px;
-  max-width: 1240px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.footer-col h5 {
+footer h5 {
   margin-bottom: 20px;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 15px;
 }
 
-.footer-col p {
+footer p {
   color: #ddd;
   line-height: 1.7;
   margin-bottom: 10px;
-  font-size: 14px;
 }
 
-.footer-col a {
+footer a {
   color: white;
-  transition: color 0.3s ease;
 }
 
-.footer-col a:hover {
+footer a:hover {
   color: #b9834b;
 }
 
-.footer-center {
-  text-align: center;
-  color: #cfcfcf;
-  font-size: 13px;
-  margin-bottom: 10px;
+footer .container {
+  position: relative;
+  z-index: 2;
 }
 
 .footer-credit {
   text-align: center;
   color: #cfcfcf;
   font-size: 13px;
-  margin-top: 16px;
-}
-
-footer hr {
-  opacity: 0.2;
-  margin: 30px 0;
+  margin-top: 22px;
 }
 
 /* WHATSAPP */
@@ -758,18 +592,11 @@ footer hr {
   z-index: 999;
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
   font-size: 14px;
-  border: none;
-  cursor: pointer;
-  transition: transform 0.3s ease;
 }
 
 .whatsapp-float:hover {
   transform: scale(1.08);
   color: white;
-}
-
-.whatsapp-float:active {
-  transform: scale(0.95);
 }
 
 /* TABLET */
@@ -781,38 +608,15 @@ footer hr {
     gap: 40px;
   }
 
-  .brands-logos-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 24px;
-  }
-
+  .brands-logos-grid,
   .personal-preview-grid,
   .personal-projects-gallery,
   .gallery-grid {
     grid-template-columns: repeat(2, 1fr);
-    gap: 16px;
   }
 
   .personal-preview-grid img {
     height: 420px;
-  }
-
-  .article-feature-box {
-    padding: 40px 24px;
-  }
-
-  .consultation-box {
-    padding: 40px 20px;
-  }
-
-  .services-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-  }
-
-  .footer-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 32px;
   }
 }
 
@@ -827,350 +631,165 @@ footer hr {
     padding: 22px 0;
   }
 
-  .navbar .container,
-  .navbar .container-fluid {
-    padding: 0 12px;
-  }
-
   .navbar-brand {
     font-size: 13px;
     letter-spacing: 1.4px;
   }
 
-  .navbar-collapse {
-    left: 8px;
-    right: 8px;
-    padding: 16px;
-  }
-
   .hero {
     min-height: calc(100vh - 90px);
-    padding: 60px 16px 80px;
-  }
-
-  .hero-wrapper {
-    padding: 0 16px;
-  }
-
-  .hero-content {
-    padding: 0;
+    padding: 80px 18px 120px;
+    align-items: center;
   }
 
   .hero-kicker {
-    max-width: 100%;
+    max-width: 320px;
     margin: 0 auto 18px;
     font-size: 10px;
     line-height: 1.8;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
   }
 
   .hero h1 {
-    font-size: clamp(32px, 9vw, 48px);
-    line-height: 1.1;
+    font-size: clamp(39px, 11.2vw, 52px);
+    line-height: 0.96;
     letter-spacing: 1px;
-    margin-bottom: 18px;
+    max-width: 360px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .hero-actions {
     flex-direction: column;
-    gap: 10px;
-    margin-top: 24px;
+    gap: 12px;
+    margin-top: 28px;
   }
 
   .btn-main,
   .btn-outline-main {
     width: 100%;
-    min-height: 50px;
-    padding: 12px 18px;
-    font-size: 12px;
+    min-height: 54px;
+    padding: 14px 22px;
   }
 
   .section-padding {
-    padding: 48px 16px;
+    padding: 58px 0;
   }
 
   .section-title {
-    font-size: clamp(24px, 6vw, 32px);
-    letter-spacing: 2px;
-    margin-bottom: 28px;
-    padding: 0;
+    font-size: 30px;
+    letter-spacing: 3px;
+    margin-bottom: 34px;
   }
 
   .about-section {
-    padding: 64px 16px;
+    padding: 96px 24px;
   }
 
   .about-layout {
     grid-template-columns: 1fr;
-    gap: 32px;
+    gap: 44px;
   }
 
   .about-label {
-    font-size: 11px;
-    letter-spacing: 2px;
+    font-size: 12px;
+    letter-spacing: 3px;
     line-height: 1.6;
   }
 
   .about-heading {
-    font-size: clamp(28px, 7vw, 42px);
-    line-height: 1.1;
-    letter-spacing: 1px;
+    font-size: 42px;
+    line-height: 1.05;
+    letter-spacing: 3px;
   }
 
   .about-text {
-    font-size: 16px;
-    line-height: 1.8;
+    font-size: 17px;
+    line-height: 2;
     max-width: 100%;
   }
 
-  .article-label {
-    font-size: 11px;
-  }
-
   .article-feature-box {
-    padding: 28px 16px;
-    border-radius: 20px;
-    margin: 0 16px;
-  }
-
-  .article-feature-box h2 {
-    font-size: clamp(24px, 6vw, 36px);
-    margin-bottom: 16px;
-  }
-
-  .article-feature-box p {
-    font-size: 15px;
-    line-height: 1.6;
-  }
-
-  .brands-description {
-    font-size: 14px;
-    margin-bottom: 28px;
+    padding: 40px 22px;
   }
 
   .brands-logos-grid {
-    grid-template-columns: repeat(4, 1fr);
-    gap: 8px;
-    padding: 8px 12px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+    padding: 30px 0;
   }
 
   .brand-logo-item {
-    min-height: 90px;
-    padding: 10px;
-    border-radius: 12px;
+    min-height: 145px;
+    padding: 22px;
+    border-radius: 24px;
   }
 
   .brand-logo-item img {
-    max-width: 70px;
-    max-height: 50px;
-  }
-
-  .section-mini-title {
-    font-size: 11px;
+    max-width: 105px;
+    max-height: 78px;
   }
 
   .personal-preview-grid,
   .personal-projects-gallery,
   .gallery-grid {
     grid-template-columns: 1fr;
-    gap: 12px;
   }
 
   .personal-preview-grid img {
-    height: 280px;
-  }
-
-  .services-grid {
-    grid-template-columns: 1fr;
-    gap: 16px;
-  }
-
-  .service-box {
-    padding: 24px 16px;
-  }
-
-  .service-box h4 {
-    font-size: 16px;
-    margin-bottom: 12px;
-  }
-
-  .service-box p {
-    font-size: 14px;
-  }
-
-  .consultation-box {
-    padding: 28px 16px;
-    border-radius: 16px;
-  }
-
-  .consultation-text {
-    font-size: 15px;
-    margin-bottom: 24px;
-  }
-
-  .contact-subtitle {
-    font-size: 15px;
-    margin-bottom: 24px;
-  }
-
-  .contact-actions {
-    flex-direction: column;
-    gap: 12px;
-  }
-
-  .contact-actions .btn-main {
-    width: 100%;
-  }
-
-  .brand-detail-section {
-    padding: 48px 16px;
-    border: none;
-  }
-
-  .brand-detail-layout {
-    grid-template-columns: 1fr;
-    gap: 24px;
-  }
-
-  .brand-detail-image img {
-    height: 280px;
-  }
-
-  .brand-detail-content h2 {
-    font-size: clamp(24px, 6vw, 36px);
-    letter-spacing: 1px;
-  }
-
-  .brand-category {
-    font-size: 11px;
-  }
-
-  .brand-description {
-    font-size: 14px;
-    line-height: 1.7;
-  }
-
-  .brand-image-gallery,
-  .vuse-gallery {
-    gap: 12px;
+    height: auto;
   }
 
   .brands-hero {
-    padding: 80px 16px;
+    padding: 92px 24px;
     margin-top: 40px;
+    overflow: hidden;
     background-position: center;
   }
 
   .brands-hero h1 {
-    font-size: clamp(28px, 8vw, 42px);
-    line-height: 1.15;
-    letter-spacing: 1px;
-    max-width: 100%;
+    font-size: 34px !important;
+    line-height: 1.12 !important;
+    letter-spacing: 2px !important;
+    max-width: 320px;
+    margin: 0 auto;
+    word-break: normal;
+    overflow-wrap: normal;
   }
 
   .brands-hero p {
-    font-size: 15px;
-    line-height: 1.6;
-    max-width: 100%;
-    padding: 0;
-    margin-top: 16px;
+    font-size: 16px;
+    line-height: 1.7;
+    max-width: 320px;
+    margin: 20px auto 0;
   }
 
-  .cta-section {
-    padding: 64px 16px;
+  .brand-detail-section {
+    padding: 64px 0;
   }
 
-  .cta-text {
-    font-size: 15px;
-    margin-bottom: 24px;
+  .brand-detail-layout {
+    gap: 30px;
   }
 
-  .cta-actions {
-    flex-direction: column;
-    gap: 12px;
+  .brand-detail-content h2 {
+    font-size: 32px;
+    letter-spacing: 2px;
   }
 
-  .cta-actions .btn-main {
-    width: 100%;
-  }
-
-  .footer-grid {
-    grid-template-columns: 1fr;
-    gap: 28px;
-    margin-bottom: 28px;
-  }
-
-  .footer-col h5 {
-    font-size: 13px;
-  }
-
-  .footer-col p {
-    font-size: 13px;
-    margin-bottom: 8px;
-  }
-
-  .whatsapp-float {
-    right: 16px !important;
-    bottom: 70px !important;
-    padding: 10px 16px !important;
-    font-size: 12px !important;
-    min-height: auto;
-  }
-
-  footer {
-    padding: 48px 16px 20px;
-  }
-
-  .footer-center {
-    font-size: 12px;
-  }
-
-  .footer-credit {
-    font-size: 11px;
-    margin-top: 12px;
-  }
-}
-
-/* EXTRA SMALL DEVICES */
-
-@media (max-width: 380px) {
-  .hero h1 {
-    font-size: clamp(28px, 8vw, 40px);
-  }
-
-  .section-title {
-    font-size: clamp(22px, 5vw, 28px);
-  }
-
-  .brands-logos-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .btn-main,
-  .btn-outline-main {
-    min-height: 48px;
-    padding: 10px 14px;
-    font-size: 11px;
-  }
-
-  .article-feature-box {
-    padding: 20px 12px;
-    margin: 0 12px;
+  .brand-description {
+    font-size: 15.5px;
+    line-height: 1.8;
   }
 
   .brand-detail-image img {
-    height: 220px;
+    height: 280px;
   }
 
-  .services-grid {
-    gap: 12px;
-  }
-
-  .consultation-box {
-    padding: 20px 12px;
-  }
-
-  .cta-actions {
-    gap: 10px;
+  .whatsapp-float {
+    right: 18px !important;
+    bottom: 24px !important;
+    padding: 12px 22px !important;
+    font-size: 14px !important;
   }
 }

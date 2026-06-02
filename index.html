@@ -13,7 +13,7 @@
 
 <body>
   <nav class="navbar navbar-expand-lg sticky-top">
-    <div class="container-fluid">
+    <div class="container">
       <a class="navbar-brand" href="index.html">VUSMAFASHION STYLES</a>
 
       <button
@@ -49,12 +49,21 @@
       class="hero"
       style="
         background: url('https://i.imgur.com/4Q68iLy.jpeg') center center/cover no-repeat;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
         position: relative;
       "
     >
-      <div class="hero-overlay"></div>
+      <div
+        style="
+          position: absolute;
+          inset: 0;
+          background: rgba(0, 0, 0, 0.35);
+        "
+      ></div>
 
-      <div class="container-fluid hero-wrapper">
+      <div class="container" style="position: relative; z-index: 2;">
         <div class="hero-content">
           <div class="hero-kicker">Wardrobe Styling • Production Design • Art Direction </div>
           <h1>Leading In Creative Direction</h1>
@@ -67,155 +76,159 @@
       </div>
     </section>
 
-    <section id="about" class="about-section">
-      <div class="container-fluid">
-        <div class="about-layout">
-          <div>
-            <div class="about-label">About Vusmafashion Styles</div>
-            <h2 class="about-heading">About</h2>
-          </div>
-
-          <div>
-            <p class="about-text">
-              Vusmafashion Styles is a creative direction and production design studio focused on premium visual storytelling,
-              fashion-forward concepts, campaign execution and brand image development.
-              <br /><br />
-              The studio has collaborated with globally recognised and culturally relevant brands including Vodacom, Aperol,
-              Vuse, Jameson, Flying Fish, Cars.co.za, Makro and The Wife telenovela, delivering elevated visual experiences and
-              compelling bold visuals.
-              <br /><br />
-              Across commercial campaigns and production environments, the creative has also worked as Head of Department (HOD)
-              within the art department, contributing to the execution, visual coordination and overall creative direction of
-              large-scale commercial projects.
-            </p>
-          </div>
+    <section id="about" class="container about-section">
+      <div class="about-layout">
+        <div>
+          <div class="about-label">About Vusmafashion Styles</div>
+          <h2 class="about-heading">About</h2>
         </div>
-      </div>
-    </section>
 
-    <section id="article" class="section-padding">
-      <div class="container-fluid">
-        <div class="article-feature-box">
-          <div class="article-label">Featured Article</div>
-
-          <h2>Vusie Shabba on Being an Emerging Stylist in South Africa</h2>
-
-          <p>
-            Read the Afrosartorialism feature on Vusie Shabba's creative journey, styling philosophy,
-            fashion influences and perspective on South African fashion.
+        <div>
+          <p class="about-text">
+            Vusmafashion Styles is a creative direction and production design studio focused on premium visual storytelling,
+            fashion-forward concepts, campaign execution and brand image development.
+            <br /><br />
+            The studio has collaborated with globally recognised and culturally relevant brands including Vodacom, Aperol,
+            Vuse, Jameson, Flying Fish, Cars.co.za, Makro and The Wife telenovela, delivering elevated visual experiences and
+            compelling bold visuals.
+            <br /><br />
+            Across commercial campaigns and production environments, the creative has also worked as Head of Department (HOD)
+            within the art department, contributing to the execution, visual coordination and overall creative direction of
+            large-scale commercial projects.
           </p>
-
-          <a
-            href="https://www.afrosartorialism.net/2019/07/08/talents-vusie-shabba-on-being-an-emerging-stylist-in-south-africa/"
-            class="btn-main"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read Full Article
-          </a>
         </div>
       </div>
     </section>
 
-    <section id="brands-showcase" class="section-padding">
-      <div class="container-fluid">
-        <h2 class="section-title">Brands We've Worked With</h2>
+    <section id="article" class="container section-padding">
+      <div class="article-feature-box">
+        <div class="article-label">Featured Article</div>
 
-        <p class="brands-description">
-          Click on any brand to view our collaboration details
+        <h2>Vusie Shabba on Being an Emerging Stylist in South Africa</h2>
+
+        <p>
+          Read the Afrosartorialism feature on Vusie Shabba’s creative journey, styling philosophy,
+          fashion influences and perspective on South African fashion.
         </p>
 
-        <div class="brands-logos-grid">
-          <a href="brands.html#vodacom" class="brand-logo-item" aria-label="Vodacom" title="Vodacom">
-            <img src="https://i.imgur.com/EaarxHZ.jpeg" alt="Vodacom logo" loading="lazy" decoding="async" />
-          </a>
-
-          <a href="brands.html#aperol" class="brand-logo-item" aria-label="Aperol" title="Aperol">
-            <img src="https://i.imgur.com/SD1boNC.jpeg" alt="Aperol logo" loading="lazy" decoding="async" />
-          </a>
-
-          <a href="brands.html#vuse" class="brand-logo-item" aria-label="Vuse" title="Vuse">
-            <img src="https://i.imgur.com/0e5i7ZF.jpeg" alt="Vuse logo" loading="lazy" decoding="async" />
-          </a>
-
-          <a href="brands.html#jameson" class="brand-logo-item" aria-label="Jameson" title="Jameson">
-            <img src="https://i.imgur.com/BVRIegM.jpeg" alt="Jameson logo" loading="lazy" decoding="async" />
-          </a>
-
-          <a href="brands.html#flying-fish" class="brand-logo-item" aria-label="Flying Fish" title="Flying Fish">
-            <img src="https://i.imgur.com/G9xZMfj.jpeg" alt="Flying Fish logo" loading="lazy" decoding="async" />
-          </a>
-
-          <a href="brands.html#makro" class="brand-logo-item" aria-label="Makro" title="Makro">
-            <img id="makro-logo-index" src="https://i.ibb.co/BKVthdvg/makro-logo.png" alt="Makro logo" loading="lazy" decoding="async" />
-          </a>
-
-          <a href="brands.html#cars-co-za" class="brand-logo-item" aria-label="Cars.co.za" title="Cars.co.za">
-            <img src="https://i.imgur.com/V0xTM61.jpeg" alt="Cars.co.za logo" loading="lazy" decoding="async" />
-          </a>
-
-          <a href="brands.html#the-wife" class="brand-logo-item" aria-label="The Wife" title="The Wife">
-            <img src="https://i.imgur.com/IwJs9G5.jpeg" alt="The Wife logo" loading="lazy" decoding="async" />
-          </a>
-        </div>
+        <a
+          href="https://www.afrosartorialism.net/2019/07/08/talents-vusie-shabba-on-being-an-emerging-stylist-in-south-africa/"
+          class="btn-main"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Read Full Article
+        </a>
       </div>
     </section>
 
-    <section id="projects-preview" class="section-padding">
-      <div class="container-fluid">
-        <div class="section-heading-wrap">
-          <p class="section-mini-title">Creative Portfolio</p>
-          <h2 class="section-title">Personal Projects</h2>
-        </div>
-      
-        <div class="personal-preview-grid">
-      
-          <img src="https://i.imgur.com/2DneH7Z.jpeg" alt="Personal project preview 1" loading="lazy" decoding="async" />
-      
-          <img src="https://i.imgur.com/dqDm1Ni.jpeg" alt="Personal project preview 2" loading="lazy" decoding="async" />
-          
-          <img src="https://i.imgur.com/bXJ2zAU.jpeg" alt="Personal project preview 3" loading="lazy" decoding="async" />
-      
-        </div>
-      
-        <div class="text-center mt-5">
-          <a href="personal-projects.html" class="btn-main">
-            View Full Gallery
-          </a>
-        </div>
+    <section id="brands-showcase" class="container section-padding">
+      <h2 class="section-title">Brands We've Worked With</h2>
+
+      <p class="text-center mb-5" style="color: #666; font-size: 16px;">
+        Click on any brand to view our collaboration details
+      </p>
+
+      <div class="brands-logos-grid">
+        <a href="brands.html#vodacom" class="brand-logo-item">
+          <img src="https://i.imgur.com/EaarxHZ.jpeg" alt="Vodacom logo" loading="lazy" decoding="async" />
+        </a>
+
+        <a href="brands.html#aperol" class="brand-logo-item">
+          <img src="https://i.imgur.com/SD1boNC.jpeg" alt="Aperol logo" loading="lazy" decoding="async" />
+        </a>
+
+        <a href="brands.html#vuse" class="brand-logo-item">
+          <img src="https://i.imgur.com/0e5i7ZF.jpeg" alt="Vuse logo" loading="lazy" decoding="async" />
+        </a>
+
+        <a href="brands.html#jameson" class="brand-logo-item">
+          <img src="https://i.imgur.com/BVRIegM.jpeg" alt="Jameson logo" loading="lazy" decoding="async" />
+        </a>
+
+        <a href="brands.html#flying-fish" class="brand-logo-item">
+          <img src="https://i.imgur.com/G9xZMfj.jpeg" alt="Flying Fish logo" loading="lazy" decoding="async" />
+        </a>
+
+        <a href="brands.html#makro" class="brand-logo-item">
+          <img id="makro-logo-index" src="https://i.ibb.co/BKVthdvg/makro-logo.png" alt="Makro logo" loading="lazy" decoding="async" />
+        </a>
+
+        <a href="brands.html#cars-co-za" class="brand-logo-item">
+          <img src="https://i.imgur.com/V0xTM61.jpeg" alt="Cars.co.za logo" loading="lazy" decoding="async" />
+        </a>
+
+        <a href="brands.html#the-wife" class="brand-logo-item">
+          <img src="https://i.imgur.com/IwJs9G5.jpeg" alt="The Wife logo" loading="lazy" decoding="async" />
+        </a>
       </div>
     </section>
 
-    <section id="services" class="section-padding">
-      <div class="container-fluid">
-        <h2 class="section-title">Services</h2>
+    <section id="projects-preview" class="container section-padding">
 
-        <div class="services-grid">
+      <div class="section-heading-wrap">
+        <p class="section-mini-title">Creative Portfolio</p>
+        <h2 class="section-title">Personal Projects</h2>
+      </div>
+    
+      <div class="personal-preview-grid">
+    
+        <img src="https://i.imgur.com/2DneH7Z.jpeg" alt="Personal project preview 1" loading="lazy" decoding="async" />
+    
+        <img src="https://i.imgur.com/dqDm1Ni.jpeg" alt="Personal project preview 2" loading="lazy" decoding="async" />
+        
+        <img src="https://i.imgur.com/bXJ2zAU.jpeg" alt="Personal project preview 3" loading="lazy" decoding="async" />
+    
+      </div>
+    
+      <div class="text-center mt-5">
+        <a href="personal-projects.html" class="btn-main">
+          View Full Gallery
+        </a>
+      </div>
+    
+    </section>
+
+    <section id="services" class="container section-padding">
+      <h2 class="section-title">Services</h2>
+
+      <div class="row g-4">
+        <div class="col-md-4">
           <div class="service-box">
             <h4>Creative Production</h4>
             <p>Full creative production support for campaigns, editorials, commercial shoots and visual storytelling projects.</p>
           </div>
+        </div>
 
+        <div class="col-md-4">
           <div class="service-box">
             <h4>Art Direction</h4>
             <p>Developing strong visual concepts, mood direction, styling aesthetics and creative execution for productions.</p>
           </div>
+        </div>
 
+        <div class="col-md-4">
           <div class="service-box">
             <h4>Production Design</h4>
             <p>Designing visually compelling production environments, set aesthetics and campaign-ready visual spaces.</p>
           </div>
+        </div>
 
+        <div class="col-md-4">
           <div class="service-box">
             <h4>Fashion Styling</h4>
             <p>Editorial, campaign and commercial wardrobe styling tailored for fashion, lifestyle and entertainment productions.</p>
           </div>
+        </div>
 
+        <div class="col-md-4">
           <div class="service-box">
             <h4>Brand Activations</h4>
             <p>Creative support and visual coordination for experiential campaigns, launches, public activations and branded events.</p>
           </div>
+        </div>
 
+        <div class="col-md-4">
           <div class="service-box">
             <h4>Creative Project Management</h4>
             <p>Managing creative workflows, production coordination, visual teams and execution processes from concept to delivery.</p>
@@ -224,45 +237,41 @@
       </div>
     </section>
 
-    <section id="consultation" class="section-padding">
-      <div class="container-fluid">
-        <div class="consultation-box">
-          <h2 class="section-title">Book A Consultation</h2>
+    <section id="consultation" class="container section-padding">
+      <div class="consultation-box">
+        <h2 class="section-title">Book A Consultation</h2>
 
-          <p class="consultation-text">
-            Book a consultation for creative direction, production design, campaign planning and collaboration enquiries.
-          </p>
+        <p class="mb-4">
+          Book a consultation for creative direction, production design, campaign planning and collaboration enquiries.
+        </p>
 
-          <a href="https://wa.me/27628287844" class="btn-main" target="_blank" rel="noopener noreferrer">
-            Book Via WhatsApp
-          </a>
-        </div>
+        <a href="https://wa.me/27628287844" class="btn-main" target="_blank" rel="noopener noreferrer">
+          Book Via WhatsApp
+        </a>
       </div>
     </section>
 
-    <section id="contact" class="section-padding">
-      <div class="container-fluid">
-        <h2 class="section-title">Let's Create Together</h2>
+    <section id="contact" class="container section-padding text-center">
+      <h2 class="section-title">Let's Create Together</h2>
 
-        <p class="contact-subtitle">Available for campaigns, editorials, creative collaborations, TVC and production design.</p>
+      <p>Available for campaigns, editorials, creative collaborations, TVC and production design.</p>
 
-        <div class="contact-actions">
-          <a href="https://wa.me/27628287844" class="btn-main" target="_blank" rel="noopener noreferrer">WhatsApp</a>
-          <a href="mailto:vusimafashion.styles@gmail.com" class="btn-main contact-email">Email</a>
-        </div>
+      <div class="mt-4 d-flex justify-content-center gap-3 flex-wrap">
+        <a href="https://wa.me/27628287844" class="btn-main" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+        <a href="mailto:vusimafashion.styles@gmail.com" class="btn-main contact-email">Email</a>
       </div>
     </section>
   </main>
 
   <footer>
-    <div class="container-fluid">
-      <div class="footer-grid">
-        <div class="footer-col">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-4">
           <h5>VUSIMAFASHION STYLES</h5>
           <p>Creative Direction, Production Design & Art Direction</p>
         </div>
 
-        <div class="footer-col">
+        <div class="col-md-4">
           <h5>Navigation</h5>
           <p><a href="index.html#about">About</a></p>
           <p><a href="index.html#article">Article</a></p>
@@ -272,16 +281,16 @@
           <p><a href="index.html#consultation">Consultation</a></p>
         </div>
 
-        <div class="footer-col">
+        <div class="col-md-4">
           <h5>Contact</h5>
           <p><a href="https://wa.me/27628287844" target="_blank" rel="noopener noreferrer">WhatsApp: +27 (0)62 828 7844</a></p>
-          <p><a href="mailto:vusimafashion.styles@gmail.com">Email: vusimafashion.styles@gmail.com</a></p>
+          <p><a href="mailto:vusimafashion.styles@gmail.com">Email: vusmafashion.styles@gmail.com</a></p>
         </div>
       </div>
 
       <hr />
 
-      <p class="footer-center">© 2026 Vusimafashion Styles. All Rights Reserved.</p>
+      <p class="text-center mb-0">© 2026 Vusimafashion Styles. All Rights Reserved.</p>
       <p class="footer-credit">
         Made by <a href="https://femtechinstitute.tech/" target="_blank" rel="noopener noreferrer">FemTech Institute</a>
       </p>
