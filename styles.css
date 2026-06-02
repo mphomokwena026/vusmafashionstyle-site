@@ -234,38 +234,39 @@ img {
 
 /* ABOUT */
 
-.about-section {
-  padding: 100px 0;
+.about-section{
+  padding:120px 0;
+  background:#f8f4e8;
 }
 
-.about-layout {
-  display: grid;
-  grid-template-columns: 0.85fr 1.15fr;
-  gap: 60px;
+.about-layout{
+  display:grid;
+  grid-template-columns:0.7fr 1.3fr;
+  gap:80px;
+  align-items:start;
 }
 
-.about-label,
-.article-label,
-.projects-label,
-.section-mini-title {
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-size: 13px;
-  color: #777;
-  margin-bottom: 16px;
+.about-label{
+  text-transform:uppercase;
+  letter-spacing:4px;
+  font-size:13px;
+  color:#777;
+  margin-bottom:24px;
 }
 
-.about-heading {
-  text-transform: uppercase;
-  letter-spacing: 4px;
-  font-size: clamp(28px, 4vw, 42px);
-  line-height: 1.1;
+.about-heading{
+  text-transform:uppercase;
+  letter-spacing:4px;
+  font-size:clamp(38px,5vw,58px);
+  line-height:1.05;
+  color:#1f2430;
 }
 
-.about-text {
-  color: #555;
-  line-height: 1.9;
-  font-size: 17px;
+.about-text{
+  color:#555;
+  line-height:2.1;
+  font-size:18px;
+  max-width:760px;
 }
 
 /* BRAND LOGOS */
@@ -547,14 +548,12 @@ footer a:hover {
   right: 20px;
   background: linear-gradient(135deg, #25d366, #128c7e);
   color: white;
-  padding: 14px 20px;
+  padding: 14px 28px;
   border-radius: 999px;
   font-weight: bold;
   z-index: 999;
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
-  display: flex;
   align-items: center;
-  gap: 6px;
   font-size: 14px;
 }
 
@@ -569,7 +568,7 @@ footer a:hover {
   .about-layout,
   .brand-detail-layout {
     grid-template-columns: 1fr;
-    gap: 34px;
+    gap: 40px;
   }
 
   .brands-logos-grid,
@@ -637,11 +636,13 @@ footer a:hover {
   }
 
   .about-section {
-    padding: 64px 0;
+    padding: 90px 24px;
   }
 
   .about-text {
-    font-size: 15.5px;
+    font-size: 17px;
+    line-height: 2;
+    max-width: 100%;  
   }
 
   .article-feature-box {
