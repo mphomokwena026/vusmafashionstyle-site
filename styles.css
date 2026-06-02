@@ -848,6 +848,33 @@ footer a:hover {
   .whatsapp-float {
     bottom: 90px !important;
   }
-}
 
+  /* FORCE FOOTER LOGO TO SHOW ON MOBILE */
+
+@media (max-width: 576px) {
+  footer {
+    position: relative !important;
+    overflow: hidden !important;
+    background: #11151f !important;
+  }
+
+  footer::before {
+    content: "" !important;
+    position: absolute !important;
+    inset: 0 !important;
+    background-image: url("https://i.imgur.com/pCZHQ6r.jpg") !important;
+    background-repeat: no-repeat !important;
+    background-position: center 40px !important;
+    background-size: 520px !important;
+    opacity: 0.28 !important;
+    z-index: 0 !important;
+    pointer-events: none !important;
+  }
+
+  footer .container {
+    position: relative !important;
+    z-index: 2 !important;
+  }
+}
+}
 }
