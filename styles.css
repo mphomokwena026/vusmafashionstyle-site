@@ -404,29 +404,31 @@ img {
 /* BRANDS PAGE */
 
 .brands-hero {
-  background: linear-gradient(
-    rgba(31,36,48,0.55),
-    rgba(31,36,48,0.75)
-  ),
-  url("YOUR-IMAGE-HERE");
+  background:
+    linear-gradient(
+      rgba(31, 36, 48, 0.58),
+      rgba(31, 36, 48, 0.82)
+    ),
+    url("images/brand-hero.jpg");
+
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 
   color: white;
-  padding: 140px 24px;
+  padding: 150px 24px;
   text-align: center;
   margin-top: 80px;
 }
 
 .brands-hero h1 {
-  font-size: clamp(42px, 8vw, 72px);
+  font-size: clamp(42px, 8vw, 76px);
   text-transform: uppercase;
   letter-spacing: 4px;
   font-weight: 900;
   line-height: 1.05;
   max-width: 900px;
-  margin: auto;
+  margin: 0 auto;
 }
 
 .brand-detail-section {
