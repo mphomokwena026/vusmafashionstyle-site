@@ -62,7 +62,7 @@ img {
 }
 
 /* Desktop nav */
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
   .navbar-expand-lg .navbar-toggler {
     display: none !important;
   }
@@ -89,7 +89,7 @@ img {
 }
 
 /* Tablet/Mobile nav */
-@media (max-width: 1199px) {
+@media (max-width: 991px) {
   .navbar-expand-lg .navbar-toggler {
     display: block !important;
     margin-left: auto;
