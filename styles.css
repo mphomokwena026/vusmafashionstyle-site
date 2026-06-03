@@ -235,6 +235,10 @@ img {
   margin: 0 auto;
 }
 
+.about-layout > div {
+  width: 100%;
+}
+
 .about-label {
   text-transform: uppercase;
   letter-spacing: 4px;
@@ -623,7 +627,7 @@ footer a:hover {
 
   /* Sections */
   .section-padding {
-    padding: 58px 20px;
+    padding: 58px 18px;
   }
   .section-title {
     font-size: 30px;
@@ -633,12 +637,18 @@ footer a:hover {
 
   /* About */
   .about-section {
-    padding: 58px 20px;
+    padding: 58px 18px;
   }
   .about-layout {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
     gap: 40px;
     max-width: 100%;
+    width: 100%;
+  }
+  .about-layout > div {
+    width: 100%;
+    padding: 0;
   }
   .about-label {
     font-size: 12px;
@@ -819,5 +829,9 @@ footer a:hover {
   }
   .navbar-brand {
     font-size: 11px;
+  }
+  
+  .about-section {
+    padding: 58px 16px;
   }
 }
