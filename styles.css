@@ -1,3 +1,4 @@
+/* ========== RESET & BASE ========== */
 * {
   margin: 0;
   padding: 0;
@@ -26,8 +27,7 @@ img {
   display: block;
 }
 
-/* NAVBAR */
-
+/* ========== NAVBAR ========== */
 .navbar {
   position: sticky;
   top: 0;
@@ -61,17 +61,14 @@ img {
   box-shadow: none !important;
 }
 
-/* NAV DESKTOP */
-
+/* Desktop nav */
 @media (min-width: 1200px) {
   .navbar-expand-lg .navbar-toggler {
     display: none !important;
   }
-
   .navbar-expand-lg .navbar-collapse {
     display: flex !important;
   }
-
   .navbar-nav {
     display: flex;
     align-items: center;
@@ -79,36 +76,30 @@ img {
     flex-direction: row;
     flex-wrap: nowrap;
   }
-
   .navbar-nav .nav-link {
     color: #1f2430 !important;
     font-size: 12px;
     letter-spacing: 1.5px;
     white-space: nowrap;
   }
-
   .navbar-nav .nav-link:hover,
   .navbar-nav .nav-link.active {
     color: #b9834b !important;
   }
 }
 
-/* NAV TABLET/MOBILE */
-
+/* Tablet/Mobile nav */
 @media (max-width: 1199px) {
   .navbar-expand-lg .navbar-toggler {
     display: block !important;
     margin-left: auto;
   }
-
   .navbar-expand-lg .navbar-collapse {
     display: none !important;
   }
-
   .navbar-expand-lg .navbar-collapse.show {
     display: block !important;
   }
-
   .navbar-collapse {
     position: absolute;
     top: calc(100% + 10px);
@@ -119,13 +110,11 @@ img {
     background: #f8f4e8;
     box-shadow: 0 24px 55px rgba(0, 0, 0, 0.18);
   }
-
   .navbar-nav {
     flex-direction: column !important;
     align-items: flex-start !important;
     gap: 12px !important;
   }
-
   .navbar-nav .nav-item,
   .navbar-nav .nav-link,
   .navbar-nav .btn-main {
@@ -133,8 +122,7 @@ img {
   }
 }
 
-/* BUTTONS */
-
+/* ========== BUTTONS ========== */
 .btn-main,
 .btn-outline-main {
   display: inline-flex;
@@ -157,7 +145,6 @@ img {
   background: linear-gradient(135deg, #1f2430 0%, #4d3529 45%, #b9834b 100%);
   box-shadow: 0 14px 30px rgba(31, 36, 48, 0.25);
 }
-
 .btn-main:hover {
   transform: translateY(-3px);
   box-shadow: 0 22px 48px rgba(31, 36, 48, 0.35);
@@ -169,15 +156,13 @@ img {
   background: rgba(255, 255, 255, 0.08);
   backdrop-filter: blur(10px);
 }
-
 .btn-outline-main:hover {
   background: linear-gradient(135deg, #b9834b 0%, #1f2430 100%);
   border-color: transparent;
   transform: translateY(-3px);
 }
 
-/* HERO */
-
+/* ========== HERO ========== */
 .hero {
   min-height: 92vh;
   display: flex;
@@ -220,8 +205,7 @@ img {
   flex-wrap: wrap;
 }
 
-/* SECTIONS */
-
+/* ========== SECTIONS ========== */
 .section-padding {
   padding: 90px 0;
 }
@@ -236,8 +220,7 @@ img {
   color: #1f2430;
 }
 
-/* ABOUT */
-
+/* ========== ABOUT ========== */
 .about-section {
   padding: 0 10px;
   background: #f8f4e8;
@@ -273,8 +256,7 @@ img {
   max-width: 760px;
 }
 
-/* BRAND LOGOS */
-
+/* ========== BRAND LOGOS ========== */
 .brands-logos-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(160px, 1fr));
@@ -294,21 +276,18 @@ img {
   align-items: center;
   justify-content: center;
 }
-
 .brand-logo-item:hover {
   transform: translateY(-8px);
   box-shadow: 0 18px 40px rgba(31, 36, 48, 0.16);
   border-color: #b9834b;
 }
-
 .brand-logo-item img {
   max-width: 130px;
   max-height: 90px;
   object-fit: contain;
 }
 
-/* ARTICLE */
-
+/* ========== ARTICLE FEATURE ========== */
 .article-feature-box {
   max-width: 900px;
   margin: 0 auto;
@@ -317,13 +296,11 @@ img {
   background: #f5efe4;
   text-align: center;
 }
-
 .article-feature-box h2 {
   font-size: clamp(32px, 5vw, 58px);
   line-height: 1.05;
   margin-bottom: 24px;
 }
-
 .article-feature-box p {
   max-width: 680px;
   margin: 0 auto 32px;
@@ -332,8 +309,7 @@ img {
   color: #444;
 }
 
-/* PERSONAL PROJECTS */
-
+/* ========== PERSONAL PROJECTS / GALLERY ========== */
 .personal-preview-grid,
 .personal-projects-gallery,
 .gallery-grid {
@@ -352,39 +328,33 @@ img {
   overflow: hidden;
   border-radius: 24px;
 }
-
 .gallery-item img {
   height: 100%;
   object-fit: cover;
 }
 
-/* SERVICES */
-
+/* ========== SERVICES ========== */
 .service-box {
   border-top: 1px solid #ccc;
   padding: 32px 24px;
   height: 100%;
 }
-
 .service-box:hover {
   border-top-color: #b9834b;
   border-top-width: 3px;
 }
-
 .service-box h4 {
   margin-bottom: 20px;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 19px;
 }
-
 .service-box p {
   color: #666;
   line-height: 1.7;
 }
 
-/* CONSULTATION */
-
+/* ========== CONSULTATION ========== */
 .consultation-box {
   background: #fffaf0;
   padding: 60px 30px;
@@ -398,15 +368,13 @@ img {
   color: #252943 !important;
   background: transparent;
 }
-
 .contact-email:hover {
   background: linear-gradient(135deg, #1f2430, #b9834b);
   color: white !important;
   border-color: transparent;
 }
 
-/* BRANDS PAGE */
-
+/* ========== BRANDS PAGE ========== */
 .brands-hero {
   background:
     linear-gradient(
@@ -423,7 +391,6 @@ img {
   margin-top: 80px;
   overflow: hidden;
 }
-
 .brands-hero h1 {
   font-size: clamp(42px, 8vw, 76px);
   text-transform: uppercase;
@@ -433,7 +400,6 @@ img {
   max-width: 900px;
   margin: 0 auto;
 }
-
 .brands-hero p {
   max-width: 760px;
   margin: 22px auto 0;
@@ -444,33 +410,27 @@ img {
   padding: 80px 0;
   border-bottom: 1px solid rgba(31, 36, 48, 0.08);
 }
-
 .brand-detail-layout {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 60px;
   align-items: center;
 }
-
 .brand-detail-layout.reverse {
   direction: rtl;
 }
-
 .brand-detail-layout.reverse > * {
   direction: ltr;
 }
-
 .brand-detail-image {
   overflow: hidden;
   border-radius: 24px;
   box-shadow: 0 10px 40px rgba(31, 36, 48, 0.1);
 }
-
 .brand-detail-image img {
   height: 400px;
   object-fit: cover;
 }
-
 .brand-detail-content h2 {
   font-size: clamp(32px, 5vw, 48px);
   text-transform: uppercase;
@@ -478,7 +438,6 @@ img {
   margin-bottom: 10px;
   font-weight: 900;
 }
-
 .brand-category {
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -487,21 +446,18 @@ img {
   font-weight: 850;
   margin-bottom: 20px;
 }
-
 .brand-description {
   color: #555;
   line-height: 1.9;
   font-size: 16px;
   margin-bottom: 20px;
 }
-
 .brand-services {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
   margin-top: 30px;
 }
-
 .service-tag {
   background: #fffaf0;
   color: #252943;
@@ -518,20 +474,17 @@ img {
   grid-template-columns: 1fr;
   gap: 16px;
 }
-
 .brand-image-gallery img,
 .vuse-gallery img {
   border-radius: 20px;
   object-fit: cover;
 }
 
-/* FOOTER */
-
-/* Footer: full-bleed background using your Imgur image + readable overlay */
+/* ========== FOOTER ========== */
 footer {
   position: relative;
   background-image: url("https://i.imgur.com/pCZHQ6r.jpg");
-  background-size: cover;           /* make the image fill the footer */
+  background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   color: #fff;
@@ -539,7 +492,6 @@ footer {
   overflow: hidden;
 }
 
-/* dark overlay so text stays readable on top of the image */
 footer::before {
   content: "";
   position: absolute;
@@ -552,13 +504,11 @@ footer::before {
   z-index: 0;
 }
 
-/* make all footer children sit above the overlay */
 footer > * {
   position: relative;
   z-index: 1;
 }
 
-/* footer links and hover */
 footer a {
   color: #fff;
   transition: color 0.25s ease;
@@ -567,7 +517,6 @@ footer a:hover {
   color: #b9834b;
 }
 
-/* credit styling tweak */
 .footer-credit {
   text-align: center;
   color: rgba(255, 255, 255, 0.92);
@@ -575,16 +524,7 @@ footer a:hover {
   margin-top: 22px;
 }
 
-/* Mobile adjustments: tighten padding and shift background focus toward the bottom */
-@media (max-width: 576px) {
-  footer {
-    padding: 72px 18px 28px;
-    background-position: center bottom;
-  }
-}
-
-/* WHATSAPP */
-
+/* ========== WHATSAPP FLOAT ========== */
 .whatsapp-float {
   position: fixed;
   bottom: 90px;
@@ -598,14 +538,12 @@ footer a:hover {
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
   font-size: 14px;
 }
-
 .whatsapp-float:hover {
   transform: scale(1.08);
   color: white;
 }
 
-/* TABLET */
-
+/* ========== TABLET (≤991px) ========== */
 @media (max-width: 991px) {
   .about-layout,
   .brand-detail-layout {
@@ -625,8 +563,8 @@ footer a:hover {
   }
 }
 
-/* MOBILE */
-
+/* ========== MOBILE (≤576px) ========== */
+/* All phone overrides are merged into one clean block */
 @media (max-width: 576px) {
   html {
     scroll-padding-top: 110px;
@@ -635,18 +573,17 @@ footer a:hover {
   .navbar {
     padding: 22px 0;
   }
-
   .navbar-brand {
     font-size: 13px;
     letter-spacing: 1.4px;
   }
 
+  /* Hero */
   .hero {
     min-height: calc(100vh - 90px);
     padding: 80px 18px 120px;
     align-items: center;
   }
-
   .hero-kicker {
     max-width: 320px;
     margin: 0 auto 18px;
@@ -654,7 +591,6 @@ footer a:hover {
     line-height: 1.8;
     letter-spacing: 3px;
   }
-
   .hero h1 {
     font-size: clamp(39px, 11.2vw, 52px);
     line-height: 0.96;
@@ -663,13 +599,11 @@ footer a:hover {
     margin-left: auto;
     margin-right: auto;
   }
-
   .hero-actions {
     flex-direction: column;
     gap: 12px;
     margin-top: 28px;
   }
-
   .btn-main,
   .btn-outline-main {
     width: 100%;
@@ -677,151 +611,86 @@ footer a:hover {
     padding: 14px 22px;
   }
 
+  /* Sections */
   .section-padding {
     padding: 58px 0;
   }
-
   .section-title {
     font-size: 30px;
     letter-spacing: 3px;
     margin-bottom: 34px;
   }
 
+  /* About */
   .about-section {
     padding: 64px 30px;
   }
-
   .about-layout {
     grid-template-columns: 1fr;
     gap: 44px;
   }
-
   .about-label {
     font-size: 12px;
     letter-spacing: 3px;
     line-height: 1.6;
   }
-
   .about-heading {
     font-size: 42px;
     line-height: 1.05;
     letter-spacing: 3px;
   }
-
   .about-text {
     font-size: 17px;
     line-height: 2;
     max-width: 100%;
   }
 
+  /* Article feature */
   .article-feature-box {
     padding: 40px 22px;
   }
 
+  /* Brand logos */
   .brands-logos-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 18px;
     padding: 30px 0;
   }
-
   .brand-logo-item {
     min-height: 145px;
     padding: 22px;
     border-radius: 24px;
   }
-
   .brand-logo-item img {
     max-width: 105px;
     max-height: 78px;
   }
 
+  /* Galleries */
   .personal-preview-grid,
   .personal-projects-gallery,
   .gallery-grid {
     grid-template-columns: 1fr;
   }
-
   .personal-preview-grid img {
     height: auto;
   }
 
-  .brands-hero {
-    padding: 92px 24px;
-    margin-top: 40px;
-    overflow: hidden;
-    background-position: center;
-  }
-
-  .brands-hero h1 {
-    font-size: 34px !important;
-    line-height: 1.12 !important;
-    letter-spacing: 2px !important;
-    max-width: 320px;
-    margin: 0 auto;
-    word-break: normal;
-    overflow-wrap: normal;
-  }
-
-  .brands-hero p {
-    font-size: 16px;
-    line-height: 1.7;
-    max-width: 320px;
-    margin: 20px auto 0;
-  }
-
-  .brand-detail-section {
-    padding: 64px 0;
-  }
-
-  .brand-detail-layout {
-    gap: 30px;
-  }
-
-  .brand-detail-content h2 {
-    font-size: 32px;
-    letter-spacing: 2px;
-  }
-
-  .brand-description {
-    font-size: 15.5px;
-    line-height: 1.8;
-  }
-
-  .brand-detail-image img {
-    height: 280px;
-  }
-
-  .whatsapp-float {
-    right: 18px !important;
-    bottom: 24px !important;
-    padding: 12px 22px !important;
-    font-size: 14px !important;
-  }
-
-  footer::before {
-    background-size: 320px;
-    opacity: 0.05;
-  }
-  
-  /* FINAL MOBILE OVERRIDES */
-
-@media (max-width: 576px) {
-
+  /* Brands hero */
   .brands-hero {
     width: 100%;
     padding: 90px 24px;
     margin-top: 0;
     overflow: hidden;
+    background-position: center;
   }
-
   .brands-hero h1 {
     font-size: 30px !important;
-    line-height: 1.15 !important;
-    letter-spacing: 1.5px !important;
+    line-height: 1.15;
+    letter-spacing: 1.5px;
     max-width: 300px;
     margin: 0 auto;
   }
-
   .brands-hero p {
     font-size: 15px;
     line-height: 1.7;
@@ -829,52 +698,51 @@ footer a:hover {
     margin: 18px auto 0;
   }
 
+  /* Brand detail */
+  .brand-detail-section {
+    padding: 64px 0;
+  }
+  .brand-detail-layout {
+    gap: 30px;
+  }
+  .brand-detail-content h2 {
+    font-size: 32px;
+    letter-spacing: 2px;
+  }
+  .brand-description {
+    font-size: 15.5px;
+    line-height: 1.8;
+  }
+  .brand-detail-image img {
+    height: 280px;
+  }
+
+  /* Footer – mobile only */
   footer {
     padding: 80px 24px 40px;
+    background: #11151f;                    /* fallback colour */
   }
-
   footer::before {
+    /* replaces the desktop gradient with the logo/image */
+    background: none;
     background-image: url("https://i.imgur.com/pCZHQ6r.jpg");
+    background-repeat: no-repeat;
+    background-position: center 40px;
     background-size: 520px;
-    background-position: center top;
-    opacity: 0.10;
+    opacity: 0.28;
   }
-
   footer .container {
+    position: relative;
+    z-index: 2;
     padding-left: 0;
     padding-right: 0;
   }
 
+  /* WhatsApp */
   .whatsapp-float {
-    bottom: 90px !important;
+    right: 18px;
+    bottom: 90px;               /* final chosen position */
+    padding: 12px 22px;
+    font-size: 14px;
   }
-
-  /* FORCE FOOTER LOGO TO SHOW ON MOBILE */
-
-@media (max-width: 576px) {
-  footer {
-    position: relative !important;
-    overflow: hidden !important;
-    background: #11151f !important;
-  }
-
-  footer::before {
-    content: "" !important;
-    position: absolute !important;
-    inset: 0 !important;
-    background-image: url("https://i.imgur.com/pCZHQ6r.jpg") !important;
-    background-repeat: no-repeat !important;
-    background-position: center 40px !important;
-    background-size: 520px !important;
-    opacity: 0.28 !important;
-    z-index: 0 !important;
-    pointer-events: none !important;
-  }
-
-  footer .container {
-    position: relative !important;
-    z-index: 2 !important;
-  }
-}
-}
 }
