@@ -769,10 +769,11 @@ footer a:hover {
   }
 
   .brand-detail-section {
-    padding: 64px 20px;
+    padding: 64px 20pxS;
   }
 
   .brand-detail-layout {
+    grid-template-columns: 1fr;
     gap: 30px;
   }
 
