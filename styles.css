@@ -222,15 +222,17 @@ img {
 
 /* ========== ABOUT ========== */
 .about-section {
-  padding: 0 10px;
+  padding: 80px 20px;
   background: #f8f4e8;
 }
 
 .about-layout {
   display: grid;
   grid-template-columns: 0.7fr 1.3fr;
-  gap: 80px;
+  gap: 60px;
   align-items: start;
+  max-width: 1240px;
+  margin: 0 auto;
 }
 
 .about-label {
@@ -548,7 +550,11 @@ footer a:hover {
   .about-layout,
   .brand-detail-layout {
     grid-template-columns: 1fr;
-    gap: 40px;
+    gap: 50px;
+  }
+
+  .about-section {
+    padding: 60px 30px;
   }
 
   .brands-logos-grid,
@@ -560,6 +566,10 @@ footer a:hover {
 
   .personal-preview-grid img {
     height: 420px;
+  }
+
+  .section-padding {
+    padding: 70px 0;
   }
 }
 
@@ -613,7 +623,7 @@ footer a:hover {
 
   /* Sections */
   .section-padding {
-    padding: 58px 0;
+    padding: 58px 20px;
   }
   .section-title {
     font-size: 30px;
@@ -623,11 +633,12 @@ footer a:hover {
 
   /* About */
   .about-section {
-    padding: 64px 30px;
+    padding: 58px 20px;
   }
   .about-layout {
     grid-template-columns: 1fr;
-    gap: 44px;
+    gap: 40px;
+    max-width: 100%;
   }
   .about-label {
     font-size: 12px;
@@ -638,22 +649,30 @@ footer a:hover {
     font-size: 42px;
     line-height: 1.05;
     letter-spacing: 3px;
+    margin-bottom: 20px;
   }
   .about-text {
-    font-size: 17px;
-    line-height: 2;
+    font-size: 16px;
+    line-height: 1.9;
     max-width: 100%;
   }
 
   /* Article feature */
   .article-feature-box {
     padding: 40px 22px;
+    margin: 0 auto;
+  }
+  .article-feature-box h2 {
+    font-size: clamp(24px, 6vw, 40px);
+  }
+  .article-feature-box p {
+    font-size: 15px;
   }
 
   /* Brand logos */
   .brands-logos-grid {
     grid-template-columns: repeat(2, 1fr);
-    gap: 18px;
+    gap: 16px;
     padding: 30px 0;
   }
   .brand-logo-item {
@@ -671,9 +690,11 @@ footer a:hover {
   .personal-projects-gallery,
   .gallery-grid {
     grid-template-columns: 1fr;
+    gap: 16px;
   }
   .personal-preview-grid img {
     height: auto;
+    min-height: 300px;
   }
 
   /* Brands hero */
@@ -700,7 +721,7 @@ footer a:hover {
 
   /* Brand detail */
   .brand-detail-section {
-    padding: 64px 0;
+    padding: 64px 20px;
   }
   .brand-detail-layout {
     gap: 30px;
@@ -715,6 +736,26 @@ footer a:hover {
   }
   .brand-detail-image img {
     height: 280px;
+  }
+
+  /* Services */
+  .service-box {
+    padding: 28px 18px;
+  }
+  .service-box h4 {
+    font-size: 16px;
+  }
+  .service-box p {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  /* Consultation */
+  .consultation-box {
+    padding: 40px 24px;
+  }
+  .consultation-box h2 {
+    font-size: 28px;
   }
 
   /* Footer – mobile only */
@@ -737,6 +778,15 @@ footer a:hover {
     padding-left: 0;
     padding-right: 0;
   }
+  footer h5 {
+    font-size: 16px;
+    margin-bottom: 16px;
+  }
+  footer p {
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 8px;
+  }
 
   /* WhatsApp */
   .whatsapp-float {
@@ -744,5 +794,30 @@ footer a:hover {
     bottom: 90px;               /* final chosen position */
     padding: 12px 22px;
     font-size: 14px;
+  }
+}
+
+/* ========== EXTRA SMALL (≤370px) ========== */
+@media (max-width: 370px) {
+  .hero-kicker {
+    font-size: 9px;
+  }
+  .hero h1 {
+    font-size: clamp(32px, 9vw, 44px);
+  }
+  .btn-main,
+  .btn-outline-main {
+    padding: 12px 18px;
+    font-size: 12px;
+  }
+  .about-heading {
+    font-size: 36px;
+  }
+  .about-text {
+    font-size: 15px;
+    line-height: 1.8;
+  }
+  .navbar-brand {
+    font-size: 11px;
   }
 }
