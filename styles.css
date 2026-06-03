@@ -787,7 +787,11 @@ footer a:hover {
   }
 
   .brand-detail-image img {
-    height: 280px;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
   }
 
   .service-box {
