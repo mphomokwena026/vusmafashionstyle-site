@@ -145,7 +145,6 @@ img {
   background: linear-gradient(135deg, #1f2430 0%, #4d3529 45%, #b9834b 100%);
   box-shadow: 0 14px 30px rgba(31, 36, 48, 0.25);
 }
-
 .btn-main:hover {
   transform: translateY(-3px);
   box-shadow: 0 22px 48px rgba(31, 36, 48, 0.35);
@@ -157,7 +156,6 @@ img {
   background: rgba(255, 255, 255, 0.08);
   backdrop-filter: blur(10px);
 }
-
 .btn-outline-main:hover {
   background: linear-gradient(135deg, #b9834b 0%, #1f2430 100%);
   border-color: transparent;
@@ -224,21 +222,17 @@ img {
 
 /* ========== ABOUT ========== */
 .about-section {
-  padding: 100px 24px;
+  padding: 80px 20px;
   background: #f8f4e8;
 }
 
 .about-layout {
   display: grid;
-  grid-template-columns: 0.8fr 1.2fr;
-  gap: 70px;
+  grid-template-columns: 0.7fr 1.3fr;
+  gap: 60px;
   align-items: start;
-  max-width: 1100px;
+  max-width: 1240px;
   margin: 0 auto;
-}
-
-.about-layout > div {
-  width: 100%;
 }
 
 .about-label {
@@ -259,9 +253,9 @@ img {
 
 .about-text {
   color: #555;
-  line-height: 2;
+  line-height: 2.1;
   font-size: 18px;
-  max-width: 720px;
+  max-width: 760px;
 }
 
 /* ========== BRAND LOGOS ========== */
@@ -284,13 +278,11 @@ img {
   align-items: center;
   justify-content: center;
 }
-
 .brand-logo-item:hover {
   transform: translateY(-8px);
   box-shadow: 0 18px 40px rgba(31, 36, 48, 0.16);
   border-color: #b9834b;
 }
-
 .brand-logo-item img {
   max-width: 130px;
   max-height: 90px;
@@ -306,13 +298,11 @@ img {
   background: #f5efe4;
   text-align: center;
 }
-
 .article-feature-box h2 {
   font-size: clamp(32px, 5vw, 58px);
   line-height: 1.05;
   margin-bottom: 24px;
 }
-
 .article-feature-box p {
   max-width: 680px;
   margin: 0 auto 32px;
@@ -340,7 +330,6 @@ img {
   overflow: hidden;
   border-radius: 24px;
 }
-
 .gallery-item img {
   height: 100%;
   object-fit: cover;
@@ -352,19 +341,16 @@ img {
   padding: 32px 24px;
   height: 100%;
 }
-
 .service-box:hover {
   border-top-color: #b9834b;
   border-top-width: 3px;
 }
-
 .service-box h4 {
   margin-bottom: 20px;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 19px;
 }
-
 .service-box p {
   color: #666;
   line-height: 1.7;
@@ -384,7 +370,6 @@ img {
   color: #252943 !important;
   background: transparent;
 }
-
 .contact-email:hover {
   background: linear-gradient(135deg, #1f2430, #b9834b);
   color: white !important;
@@ -408,7 +393,6 @@ img {
   margin-top: 80px;
   overflow: hidden;
 }
-
 .brands-hero h1 {
   font-size: clamp(42px, 8vw, 76px);
   text-transform: uppercase;
@@ -418,7 +402,6 @@ img {
   max-width: 900px;
   margin: 0 auto;
 }
-
 .brands-hero p {
   max-width: 760px;
   margin: 22px auto 0;
@@ -429,33 +412,27 @@ img {
   padding: 80px 0;
   border-bottom: 1px solid rgba(31, 36, 48, 0.08);
 }
-
 .brand-detail-layout {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 60px;
   align-items: center;
 }
-
 .brand-detail-layout.reverse {
   direction: rtl;
 }
-
 .brand-detail-layout.reverse > * {
   direction: ltr;
 }
-
 .brand-detail-image {
   overflow: hidden;
   border-radius: 24px;
   box-shadow: 0 10px 40px rgba(31, 36, 48, 0.1);
 }
-
 .brand-detail-image img {
   height: 400px;
   object-fit: cover;
 }
-
 .brand-detail-content h2 {
   font-size: clamp(32px, 5vw, 48px);
   text-transform: uppercase;
@@ -463,7 +440,6 @@ img {
   margin-bottom: 10px;
   font-weight: 900;
 }
-
 .brand-category {
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -472,21 +448,18 @@ img {
   font-weight: 850;
   margin-bottom: 20px;
 }
-
 .brand-description {
   color: #555;
   line-height: 1.9;
   font-size: 16px;
   margin-bottom: 20px;
 }
-
 .brand-services {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
   margin-top: 30px;
 }
-
 .service-tag {
   background: #fffaf0;
   color: #252943;
@@ -503,7 +476,6 @@ img {
   grid-template-columns: 1fr;
   gap: 16px;
 }
-
 .brand-image-gallery img,
 .vuse-gallery img {
   border-radius: 20px;
@@ -543,7 +515,6 @@ footer a {
   color: #fff;
   transition: color 0.25s ease;
 }
-
 footer a:hover {
   color: #b9834b;
 }
@@ -569,7 +540,6 @@ footer a:hover {
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
   font-size: 14px;
 }
-
 .whatsapp-float:hover {
   transform: scale(1.08);
   color: white;
@@ -577,24 +547,21 @@ footer a:hover {
 
 /* ========== TABLET (≤991px) ========== */
 @media (max-width: 991px) {
-  .about-section {
-    padding: 70px 24px;
-  }
-
-  .about-layout {
+  .about-layout,
+  .brand-detail-layout {
     grid-template-columns: 1fr;
-    gap: 48px;
+    gap: 50px;
   }
 
-  .about-text {
-    max-width: 100%;
-    font-size: 17px;
-    line-height: 1.95;
+  .about-section {
+    padding: 60px 30px;
   }
 
-  .brands-logos-grid {
+  .brands-logos-grid,
+  .personal-preview-grid,
+  .personal-projects-gallery,
+  .gallery-grid {
     grid-template-columns: repeat(2, 1fr);
-    gap: 24px;
   }
 
   .personal-preview-grid img {
@@ -607,6 +574,7 @@ footer a:hover {
 }
 
 /* ========== MOBILE (≤576px) ========== */
+/* All phone overrides are merged into one clean block */
 @media (max-width: 576px) {
   html {
     scroll-padding-top: 110px;
@@ -615,18 +583,17 @@ footer a:hover {
   .navbar {
     padding: 22px 0;
   }
-
   .navbar-brand {
     font-size: 13px;
     letter-spacing: 1.4px;
   }
 
+  /* Hero */
   .hero {
     min-height: calc(100vh - 90px);
     padding: 80px 18px 120px;
     align-items: center;
   }
-
   .hero-kicker {
     max-width: 320px;
     margin: 0 auto 18px;
@@ -634,7 +601,6 @@ footer a:hover {
     line-height: 1.8;
     letter-spacing: 3px;
   }
-
   .hero h1 {
     font-size: clamp(39px, 11.2vw, 52px);
     line-height: 0.96;
@@ -643,13 +609,11 @@ footer a:hover {
     margin-left: auto;
     margin-right: auto;
   }
-
   .hero-actions {
     flex-direction: column;
     gap: 12px;
     margin-top: 28px;
   }
-
   .btn-main,
   .btn-outline-main {
     width: 100%;
@@ -657,94 +621,83 @@ footer a:hover {
     padding: 14px 22px;
   }
 
+  /* Sections */
   .section-padding {
-    padding: 58px 18px;
+    padding: 58px 20px;
   }
-
   .section-title {
     font-size: 30px;
     letter-spacing: 3px;
     margin-bottom: 34px;
   }
 
+  /* About */
   .about-section {
-    padding: 58px 18px;
+    padding: 58px 20px;
   }
-
   .about-layout {
-    display: flex;
-    flex-direction: column;
+    grid-template-columns: 1fr;
     gap: 40px;
     max-width: 100%;
-    width: 100%;
   }
-
-  .about-layout > div {
-    width: 100%;
-    padding: 0;
-  }
-
   .about-label {
     font-size: 12px;
     letter-spacing: 3px;
     line-height: 1.6;
   }
-
   .about-heading {
     font-size: 42px;
     line-height: 1.05;
     letter-spacing: 3px;
     margin-bottom: 20px;
   }
-
   .about-text {
     font-size: 16px;
     line-height: 1.9;
     max-width: 100%;
   }
 
+  /* Article feature */
   .article-feature-box {
     padding: 40px 22px;
     margin: 0 auto;
   }
-
   .article-feature-box h2 {
     font-size: clamp(24px, 6vw, 40px);
   }
-
   .article-feature-box p {
     font-size: 15px;
   }
 
+  /* Brand logos */
   .brands-logos-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 16px;
     padding: 30px 0;
   }
-
   .brand-logo-item {
     min-height: 145px;
     padding: 22px;
     border-radius: 24px;
   }
-
   .brand-logo-item img {
     max-width: 105px;
     max-height: 78px;
   }
 
+  /* Galleries */
   .personal-preview-grid,
   .personal-projects-gallery,
   .gallery-grid {
     grid-template-columns: 1fr;
     gap: 16px;
   }
-
   .personal-preview-grid img {
     height: auto;
     min-height: 300px;
   }
 
+  /* Brands hero */
   .brands-hero {
     width: 100%;
     padding: 90px 24px;
@@ -752,7 +705,6 @@ footer a:hover {
     overflow: hidden;
     background-position: center;
   }
-
   .brands-hero h1 {
     font-size: 30px !important;
     line-height: 1.15;
@@ -760,7 +712,6 @@ footer a:hover {
     max-width: 300px;
     margin: 0 auto;
   }
-
   .brands-hero p {
     font-size: 15px;
     line-height: 1.7;
@@ -768,60 +719,52 @@ footer a:hover {
     margin: 18px auto 0;
   }
 
+  /* Brand detail */
   .brand-detail-section {
-    padding: 64px 20pxS;
+    padding: 64px 20px;
   }
-
   .brand-detail-layout {
-    grid-template-columns: 1fr;
     gap: 30px;
   }
-
   .brand-detail-content h2 {
     font-size: 32px;
     letter-spacing: 2px;
   }
-
   .brand-description {
     font-size: 15.5px;
     line-height: 1.8;
   }
-
   .brand-detail-image img {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    display: block;
-    object-fit: cover;
+    height: 280px;
   }
 
+  /* Services */
   .service-box {
     padding: 28px 18px;
   }
-
   .service-box h4 {
     font-size: 16px;
   }
-
   .service-box p {
     font-size: 15px;
     line-height: 1.6;
   }
 
+  /* Consultation */
   .consultation-box {
     padding: 40px 24px;
   }
-
   .consultation-box h2 {
     font-size: 28px;
   }
 
+  /* Footer – mobile only */
   footer {
     padding: 80px 24px 40px;
-    background: #11151f;
+    background: #11151f;                    /* fallback colour */
   }
-
   footer::before {
+    /* replaces the desktop gradient with the logo/image */
     background: none;
     background-image: url("https://i.imgur.com/pCZHQ6r.jpg");
     background-repeat: no-repeat;
@@ -829,28 +772,26 @@ footer a:hover {
     background-size: 520px;
     opacity: 0.28;
   }
-
   footer .container {
     position: relative;
     z-index: 2;
     padding-left: 0;
     padding-right: 0;
   }
-
   footer h5 {
     font-size: 16px;
     margin-bottom: 16px;
   }
-
   footer p {
     font-size: 14px;
     line-height: 1.8;
     margin-bottom: 8px;
   }
 
+  /* WhatsApp */
   .whatsapp-float {
     right: 18px;
-    bottom: 90px;
+    bottom: 90px;               /* final chosen position */
     padding: 12px 22px;
     font-size: 14px;
   }
@@ -861,31 +802,22 @@ footer a:hover {
   .hero-kicker {
     font-size: 9px;
   }
-
   .hero h1 {
     font-size: clamp(32px, 9vw, 44px);
   }
-
   .btn-main,
   .btn-outline-main {
     padding: 12px 18px;
     font-size: 12px;
   }
-
   .about-heading {
     font-size: 36px;
   }
-
   .about-text {
     font-size: 15px;
     line-height: 1.8;
   }
-
   .navbar-brand {
     font-size: 11px;
-  }
-
-  .about-section {
-    padding: 58px 16px;
   }
 }
