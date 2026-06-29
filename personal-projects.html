@@ -107,9 +107,34 @@
     </div>
 
   </section>
-  <div style="text-align: center; margin: 40px 0;">
-    <a href="index.html" class="view-gallery-btn back-home-btn">BACK TO HOME</a>
-  </div>
+  
+  /* Custom Pill Button Style to match the View Full Gallery button */
+.back-home-btn {
+  display: inline-block;
+  padding: 14px 40px;
+  border-radius: 50px; /* Gives it that perfect pill shape */
+  
+  /* Gradient background matching your theme */
+  background: linear-gradient(to right, #43486a, #a68980); 
+  
+  /* Text Styling */
+  color: #ffffff !important;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  
+  /* Centering & Spacing */
+  margin: 40px auto;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease;
+}
+
+/* Adds a subtle lift effect when you hover over it */
+.back-home-btn:hover {
+  transform: translateY(-2px);
+  color: #ffffff !important;
+}
   
   <!-- FOOTER -->
   <footer>
