@@ -821,3 +821,34 @@ footer a:hover {
     font-size: 11px;
   }
 }
+.projects-hero .container {
+  /* Centering everything */
+  text-align: center;
+  max-width: 650px;
+  margin: 40px auto; 
+  padding: 2.5rem;
+  
+  /* The "Blur Black Ground" effect */
+  background: rgba(0, 0, 0, 0.65); /* Dark transparent background */
+  backdrop-filter: blur(12px);    /* Blurs the page behind it */
+  -webkit-backdrop-filter: blur(12px); 
+  
+  /* Making it pop */
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Changing the text colors so they stand out clearly against the new dark background */
+.projects-hero .projects-label {
+  color: #cccccc !important;
+}
+
+.projects-hero h1 {
+  color: #ffffff !important;
+  margin: 10px 0;
+}
+
+.projects-hero .projects-description {
+  color: #e0e0e0 !important;
+}
